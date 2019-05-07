@@ -11,7 +11,7 @@ var hexagon_radius = 50;
 var hexagon_max_absolute_speed = 0.03;
 var hexagon_space_between = 2;
 var hexagon_line_width = 1;
-var hexagon_color = '#86CCCC';
+var hexagon_color = '#fff';
 
 /*
 ░█▀▀█ ░█▀▀▀█ ░█▀▀▄ ░█▀▀▀
@@ -29,7 +29,7 @@ function init() {
 
 	canvas = document.getElementById('c');
 	canvas.width = window.innerWidth;
-	canvas.height = window.innerHeight - 85;
+	canvas.height = window.innerHeight - 78;
 	canvas.style.width = canvas.width + 'px';
 	canvas.style.height = canvas.height + 'px';
 	ctx = canvas.getContext('2d');
@@ -59,7 +59,7 @@ function loop() {
 	requestAnimFrame(loop);
 
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
-	ctx.fillStyle = '#fff';
+	ctx.fillStyle = '#86cccc';
 	ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 	ctx.beginPath();

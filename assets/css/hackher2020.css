@@ -2,6 +2,11 @@ body{
   font-family: "News Cycle", sans-serif;
 }
 
+/* nav{
+  border-bottom: 3px solid #fff;
+} */
+
+
 .landing{
   position: relative;
 }
@@ -14,46 +19,42 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #fff;
   padding-bottom: 80px;
 }
 
 .btn-container{
-
   position: absolute;
-  top: 68%;
-    left: 50%;
-transform: translate(-50%, -50%);
-
-
-
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
 .btn {
-    width: 277px;
-    height: 50px;
-    font-size: 1em;
-    line-height: 60px;
-    text-align: center;
-    text-transform: uppercase;
-    cursor: pointer;
-    text-decoration:none;
-    font-family: 'News Cycle';
-    font-weight:900;
-    letter-spacing: 0.045em;
+  width: 277px;
+  height: 50px;
+  font-size: 1em;
+  line-height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration:none;
+  font-family: 'News Cycle';
+  font-weight:900;
+  letter-spacing: 0.045em;
 }
 
 .btn svg {
-    position: absolute;
-    top: 0;
-    left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .btn svg rect {
-    stroke-width: 4;
-    stroke-dasharray: 353, 0;
-    stroke-dashoffset: 0;
-    -webkit-transition: all 600ms ease;
-    transition: all 600ms ease;
+  stroke-width: 4;
+  stroke-dasharray: 353, 0;
+  stroke-dashoffset: 0;
+  -webkit-transition: all 600ms ease;
+  transition: all 600ms ease;
 }
 
 .btn span{
@@ -61,7 +62,12 @@ transform: translate(-50%, -50%);
 }
 
 .btn:hover svg rect {
-    stroke-width: 4;
-    stroke-dasharray: 196, 543;
-    stroke-dashoffset: 437;
+  stroke-width: 4;
+  stroke-dasharray: 196, 543;
+  stroke-dashoffset: 437;
+}
+
+.logo{
+  width: 200px;
+
 }
