@@ -1,39 +1,49 @@
+html{
+  width: 100%;
+  margin: 0;
+  padding:0;
+}
 body{
   font-family: "News Cycle", sans-serif;
+  background-color: #86CCCC;
 }
 
-/* nav{
-  border-bottom: 3px solid #fff;
-} */
+h1, h2{
+  font-family: din-condensed, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+a{
+  color: #3FC4AA;
+}
+
+a:hover{
+  color: #818285;
+}
 
 
 .landing{
   position: relative;
 }
-.text{
-  font-family: 'din-condensed',sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding-bottom: 80px;
-}
 
-.btn-container{
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#landingVideo{
+  display: block;
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
 }
 
 .btn {
+  position: absolute;
+  top: 70%;
+  left: 53.5%;
+  transform: translate(-50%, -50%);
   width: 277px;
   height: 50px;
-  font-size: 1em;
-  line-height: 60px;
+  font-size: 1.1em;
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
@@ -41,33 +51,183 @@ body{
   font-family: 'News Cycle';
   font-weight:900;
   letter-spacing: 0.045em;
+  border: 2px solid #fff;
 }
 
-.btn svg {
+/* Email Sign-Up Modal */
+/* Full-width input fields */
+input[type=text], input[type=email] {
+  width: 65%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 25%;
+  top: 25%;
+  width: 45%; /* Full width */
+  height: auto; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #56B8B8;
+  padding: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  border: 1px solid #888;
+}
+
+/* The Close Button (x) */
+.close {
   position: absolute;
-  top: 0;
-  left: 0;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
 }
 
-.btn svg rect {
-  stroke-width: 4;
-  stroke-dasharray: 353, 0;
-  stroke-dashoffset: 0;
-  -webkit-transition: all 600ms ease;
-  transition: all 600ms ease;
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+#mc-embedded-subscribe{
+  border: 1px solid #86CCCC;
 }
 
-.btn span{
-  color: #000;
-}
-
-.btn:hover svg rect {
-  stroke-width: 4;
-  stroke-dasharray: 196, 543;
-  stroke-dashoffset: 437;
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .logo{
   width: 200px;
+}
 
+/* About & Last Year */
+.about{
+  background-image: linear-gradient(to bottom, #86CCCC , #B6E0E0);
+  padding: 50px;
+  display: inline-block;
+}
+
+.about-bee{
+  width: 200px;
+  transform: rotate(15deg);
+  text-align: center;
+}
+
+.last-year-video-section{
+  display: inline-block;
+  padding: 10px 20px;
+  display: block;
+  height:auto;
+  word-wrap: break-word;
+  color: #0F2C34;
+  background-image: linear-gradient(to bottom, #B6E0E0 , #E6F4F4);
+  white-space: normal;
+}
+
+iframe{
+  text-align: center;
+}
+
+p.video-section{
+  padding: 150px 0;
+}
+
+.last-year-sponsor-section{
+  display: block;
+  text-align:center;
+  background-image: linear-gradient(to bottom, #E6F4F4 , #fff);
+}
+
+.sponsor-2020{
+  background-color: #fff;
+  text-align: center;
+  font-size: 1.3em;
+  padding-bottom: 50px;
+}
+
+#lab_social_icon_footer a {
+  color: #333;
+}
+
+#lab_social_icon_footer .social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+#lab_social_icon_footer .social {
+  -webkit-transform: scale(0.8);
+  /* Browser Variations: */
+
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+@media only screen and (max-width: 991px) {
+  .btn {
+    left: 50%;
+  }
+  .modal {
+    width: 100%;
+    left: 0;
+  }
+  #landingVideo {
+    display: none;
+  }
+  #c{
+    display: inline-block;
+    width: 100%;
+  }
+  .no-video{
+    display: inline-block;
+    position: absolute;
+    margin: 0px;
+  }
+  .top-heading{
+    top:45%;
+  }
+  .bottom-heading{
+    top:55%;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  #landingVideo {
+    display: inline-block;
+  }
+  #c{
+    display: none;
+  }
+  .no-video{
+    display: none;
+  }
 }
