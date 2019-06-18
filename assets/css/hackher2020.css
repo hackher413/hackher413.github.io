@@ -23,6 +23,13 @@ a:hover{
   color: #818285;
 }
 
+a.icon-nav{
+  color: #818285;
+}
+
+a.icon-nav:hover{
+  color: #3FC4AA;
+}
 
 .landing{
   position: relative;
@@ -33,13 +40,12 @@ a:hover{
   position: relative;
   min-width: 100%;
   min-height: 100%;
-  z-index: -100;
 }
 
 .btn {
   position: absolute;
-  top: 70%;
-  left: 53.5%;
+  top: 69%;
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 277px;
   height: 50px;
@@ -128,7 +134,7 @@ input[type=text]:focus, input[type=email]:focus {
 
 /* About & Last Year */
 .about{
-  background-image: linear-gradient(to bottom, #86CCCC , #B6E0E0);
+  background-image: linear-gradient(to bottom, #86CCCC , #E6F4F4);
   padding: 50px;
   display: inline-block;
 }
@@ -136,39 +142,24 @@ input[type=text]:focus, input[type=email]:focus {
 .about-bee{
   width: 200px;
   transform: rotate(15deg);
-  text-align: center;
 }
 
-.last-year-video-section{
-  display: inline-block;
-  padding: 10px 20px;
-  display: block;
-  height:auto;
-  word-wrap: break-word;
-  color: #0F2C34;
-  background-image: linear-gradient(to bottom, #B6E0E0 , #E6F4F4);
-  white-space: normal;
-}
-
-iframe{
-  text-align: center;
-}
-
-p.video-section{
-  padding: 150px 0;
-}
-
-.last-year-sponsor-section{
+.sponsor-section{
   display: block;
   text-align:center;
   background-image: linear-gradient(to bottom, #E6F4F4 , #fff);
+  padding-bottom: 20px;
+}
+
+.sponsor-logo{
+  max-width: 200px;
 }
 
 .sponsor-2020{
   background-color: #fff;
   text-align: center;
   font-size: 1.3em;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 #lab_social_icon_footer a {
