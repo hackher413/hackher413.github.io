@@ -12,15 +12,15 @@ h1, h2{
   font-family: din-condensed, sans-serif;
   font-weight: 400;
   font-style: normal;
-  text-align: center;
 }
 
 a{
-  color: #3FC4AA;
+  color: #86CCCC;
 }
 
 a:hover{
-  color: #818285;
+  color: #212529;
+  text-decoration: none;
 }
 
 a.icon-nav{
@@ -77,66 +77,63 @@ input[type=text]:focus, input[type=email]:focus {
   outline: none;
 }
 
-/* Add padding to container elements */
-.container {
-  padding: 16px;
-}
-
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  left: 25%;
-  top: 25%;
-  width: 45%; /* Full width */
-  height: auto; /* Full height */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: #56B8B8;
-  padding: 50px;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/* Modal Content/Box */
+/* Modal Content */
 .modal-content {
-  background-color: #fefefe;
+  background-color: #86CCCC;
+  margin: auto;
+  padding: 20px;
   border: 1px solid #888;
+  width: 80%;
 }
 
-/* The Close Button (x) */
+/* The Close Button */
 .close {
-  position: absolute;
-  right: 35px;
-  top: 15px;
-  font-size: 40px;
+  color: #000;
+  float: right;
+  font-size: 28px;
   font-weight: bold;
-  color: #f1f1f1;
 }
 
 .close:hover,
 .close:focus {
-  color: #f44336;
+  color: #fff;
+  text-decoration: none;
   cursor: pointer;
-}
-#mc-embedded-subscribe{
-  border: 1px solid #86CCCC;
-}
-
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
 }
 
 .logo{
   width: 200px;
 }
 
-/* About & Last Year */
+/* About */
 .about{
-  background-image: linear-gradient(to bottom, #86CCCC , #E6F4F4);
-  padding: 50px;
+  /* background-color: #B6E0E0; */
+  background-image: linear-gradient(#B6E0E0, #E6F4F4);
+  padding: 10%;
   display: inline-block;
+}
+
+.about-heading{
+  font-size: 1.8em;
+}
+
+.about-para{
+  padding-top: 10px;
 }
 
 .about-bee{
@@ -147,19 +144,16 @@ input[type=text]:focus, input[type=email]:focus {
 .sponsor-section{
   display: block;
   text-align:center;
-  background-image: linear-gradient(to bottom, #E6F4F4 , #fff);
-  padding-bottom: 20px;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.sponsor-section p{
+  font-size: 1.3em;
 }
 
 .sponsor-logo{
   max-width: 200px;
-}
-
-.sponsor-2020{
-  background-color: #fff;
-  text-align: center;
-  font-size: 1.3em;
-  padding-bottom: 20px;
 }
 
 #lab_social_icon_footer a {
@@ -183,25 +177,27 @@ input[type=text]:focus, input[type=email]:focus {
   -o-transition-duration: 0.5s;
 }
 
-@media only screen and (max-width: 991px) {
-  .btn {
-    left: 50%;
-  }
-  .modal {
-    width: 100%;
-    left: 0;
-  }
+.social-media{
+  padding: 20px;
+  background-image: linear-gradient(to bottom, #E6F4F4 , #86CCCC);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
   #landingVideo {
     display: none;
   }
   #c{
     display: inline-block;
     width: 100%;
+    padding: 0;
+    margin: 0;
   }
   .no-video{
     display: inline-block;
     position: absolute;
     margin: 0px;
+    text-align: center;
   }
   .top-heading{
     top:45%;
@@ -209,9 +205,72 @@ input[type=text]:focus, input[type=email]:focus {
   .bottom-heading{
     top:55%;
   }
+  div{
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
-@media only screen and (min-width: 991px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #landingVideo {
+    display: none;
+  }
+  #c{
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .no-video{
+    display: inline-block;
+    position: absolute;
+    margin: 0px;
+    text-align: center;
+  }
+  .top-heading{
+    top:45%;
+  }
+  .bottom-heading{
+    top:55%;
+  }
+  div{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #landingVideo {
+    display: none;
+  }
+  #c{
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .no-video{
+    display: inline-block;
+    position: absolute;
+    margin: 0px;
+    text-align: center;
+  }
+  .top-heading{
+    top:45%;
+  }
+  .bottom-heading{
+    top:55%;
+  }
+  div{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
   #landingVideo {
     display: inline-block;
   }
@@ -223,8 +282,15 @@ input[type=text]:focus, input[type=email]:focus {
   }
 }
 
-.social-media{
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-image: linear-gradient(to bottom, #fff , #86CCCC);
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #landingVideo {
+    display: inline-block;
+  }
+  #c{
+    display: none;
+  }
+  .no-video{
+    display: none;
+  }
 }
