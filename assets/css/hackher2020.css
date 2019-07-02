@@ -2,6 +2,7 @@ html{
   width: 100%;
   margin: 0;
   padding:0;
+  min-width: 330px;
 }
 body{
   font-family: "News Cycle", sans-serif;
