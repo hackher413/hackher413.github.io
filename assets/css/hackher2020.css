@@ -520,7 +520,7 @@ input[type=text]:focus, input[type=email]:focus {
     margin: 0;
   }
   .no-video{
-    display: inline-block;
+
     position: absolute;
     margin: 0px;
     text-align: center;
@@ -556,7 +556,7 @@ input[type=text]:focus, input[type=email]:focus {
     margin: 0;
   }
   .no-video{
-    display: inline-block;
+
     position: absolute;
     margin: 0px;
     text-align: center;
@@ -592,7 +592,7 @@ input[type=text]:focus, input[type=email]:focus {
     margin: 0;
   }
   .no-video{
-    display: inline-block;
+    
     position: absolute;
     margin: 0px;
     text-align: center;
