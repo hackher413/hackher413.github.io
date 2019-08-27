@@ -428,7 +428,7 @@ input[type=text]:focus, input[type=email]:focus {
     border-radius: 50%;
     display: block;
     margin-left: auto;
-    margin-right: auto 
+    margin-right: auto
 }
 
 #portfolio .container-fluid {
@@ -626,7 +626,7 @@ input[type=text]:focus, input[type=email]:focus {
     margin: 0;
   }
   .no-video{
-    
+
     position: absolute;
     margin: 0px;
     text-align: center;
@@ -803,7 +803,7 @@ input[type=text]:focus, input[type=email]:focus {
 .p_120 {
   padding-top: 120px;
   padding-bottom: 120px; }
-  
+
 /* Main Title Area css
 ============================================================================================ */
 .main_title {
