@@ -132,7 +132,7 @@ input[type=text]:focus, input[type=email]:focus {
 .about-heading{
   font-size: 2em;
   color: #56b8b8;
-  text-align: left;
+  text-align: center;
   font-family: 'News Cycle';
 }
 
@@ -203,7 +203,34 @@ input[type=text]:focus, input[type=email]:focus {
   color: #56b8b8;
 }
 
+/* GREY BG */
+.greybg{
+  background-color: #f9f9ff;
+  padding: 5%;
+  display: inline-block;
+}
 
+.greybg-heading{
+  font-size: 2em;
+  color: #000000;
+  text-align: center;
+  font-family: 'News Cycle';
+}
+
+.greybg-para{
+  padding-top: 10px;
+  text-align: center;
+  font-family: 'News Cycle';
+  font-size: 1.2em;
+}
+
+.greybgBLUETXT-para{
+  padding-top: 10px;
+  text-align: center;
+  font-family: 'News Cycle';
+  font-size: 1.2em;
+  color: #56b8b8;
+}
 
 /* Dark Section Speaker */
 .darkbg{
@@ -395,6 +422,13 @@ input[type=text]:focus, input[type=email]:focus {
   max-width: 100%;
   height: auto;
   img-align: center;
+}
+
+.img-circle {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
 }
 
 #portfolio .container-fluid {
@@ -714,3 +748,175 @@ input[type=text]:focus, input[type=email]:focus {
     }
   }
 }
+/* Feature Area css
+============================================================================================ */
+.feature_area {
+  background: #f9f9ff; }
+  .feature_area.feature_tow {
+    background: #fff; }
+    .feature_area.feature_tow .feature_item {
+      background: #f9f9ff; }
+      .feature_area.feature_tow .feature_item:hover {
+        background: #fff; }
+
+.feature_inner {
+  margin-bottom: -30px; }
+
+.feature_item {
+  padding: 50px 35px;
+  border-radius: 10px;
+  transition: all 300ms linear 0s;
+  background: #fff;
+  margin-bottom: 30px; }
+  .feature_item i {
+    margin-bottom: 35px;
+    display: block; }
+    .feature_item i:before {
+      margin-left: 0px;
+      font-size: 60px;
+      color: #e1e1e1;
+      line-height: 60px; }
+  .feature_item h4 {
+  	text-align: center;
+    color: #56b8b8;
+    font-size: 19px;
+    font-family: "Heebo", sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: none; }
+  .feature_item p {
+    text-align: center;
+    margin-bottom: 0px; }
+  .feature_item .main_btn {
+    padding: 0px 30px;
+    line-height: 38px; }
+  .feature_item:hover {
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.08);
+    border-color: #fff; }
+    .feature_item:hover i:before {
+      background: linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+
+/* End Feature Area css
+============================================================================================ */
+.p_120 {
+  padding-top: 120px;
+  padding-bottom: 120px; }
+  
+/* Main Title Area css
+============================================================================================ */
+.main_title {
+  text-align: center;
+  margin-bottom: 75px; }
+  .main_title h2 {
+    font-family: "Heebo", sans-serif;
+    font-size: 36px;
+    color: #222222;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase; }
+  .main_title p {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    line-height: 26px;
+    color: #777777;
+    margin-bottom: 0px;
+    max-width: 570px;
+    margin: auto; }
+  .main_title.white h2 {
+    color: #fff; }
+  .main_title.white p {
+    color: #fff;
+    opacity: .6; }
+
+/* End Main Title Area css
+============================================================================================ */
+/*---------------------------------------------------- */
+/* Welcome Area css
+============================================================================================ */
+.welcome_inner .welcome_img {
+  background: #eeeeee;
+  margin-left: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px; }
+  .welcome_inner .welcome_img img {
+    margin-top: -30px; }
+
+.welcome_text {
+  margin-top: 45px; }
+  .welcome_text h4 {
+    color: #222222;
+    font-family: "Heebo", sans-serif;
+    font-size: 36px;
+    margin-bottom: 18px;
+    text-transform: uppercase; }
+  .welcome_text p {
+    max-width: 495px;
+    line-height: 24px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    margin-bottom: 40px; }
+
+.wel_item {
+  border: 1px solid #eeeeee;
+  padding: 30px 25px;
+  border-radius: 5px; }
+  .wel_item i {
+    font-size: 24px;
+    background: linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .wel_item h4 {
+    font-size: 24px;
+    font-family: "Heebo", sans-serif;
+    font-weight: bold;
+    color: #222222;
+    margin-bottom: 5px;
+    margin-top: 10px; }
+  .wel_item p {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    color: #777777;
+    margin-bottom: 0px; }
+
+.tools_expert {
+  box-shadow: 0px 8px 30px 0px rgba(153, 153, 153, 0.1);
+  padding: 50px 35px; }
+  .tools_expert h3 {
+    color: #222222;
+    font-size: 21px;
+    text-transform: uppercase; }
+  .tools_expert .skill_main .skill_item {
+    margin-bottom: 18px; }
+    .tools_expert .skill_main .skill_item:last-child {
+      margin-bottom: 0px; }
+    .tools_expert .skill_main .skill_item h4 {
+      text-align: right;
+      font-size: 14px;
+      font-family: "Roboto", sans-serif;
+      font-weight: normal;
+      color: #777777;
+      margin-bottom: 15px; }
+    .tools_expert .skill_main .skill_item .progress {
+      height: 20px;
+      border-radius: 10px;
+      background: transparent;
+      border: 1px solid #eeeeee;
+      padding-left: 5px;
+      padding-right: 5px;
+      box-shadow: 0px 20px 20px 0px rgba(132, 144, 255, 0.2); }
+      .tools_expert .skill_main .skill_item .progress .progress-bar {
+        width: 0%;
+        transition: width .6s ease;
+        height: 10px;
+        border-radius: 5px;
+        vertical-align: middle;
+        align-self: center;
+        background-image: -moz-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+        background-image: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+        background-image: -ms-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%); }
+
+/* End Welcome Area css
+============================================================================================ */
