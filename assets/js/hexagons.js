@@ -28,9 +28,9 @@ var s3p3 = Math.sqrt(3);
 function init() {
 
 	canvas = document.getElementById('c');
- 	//canvas.width = window.innerWidth - 15;
+ 	// canvas.width = window.innerWidth - 950;
 	canvas.height = window.innerHeight - 150;
-	//canvas.style.width = canvas.width + 'px';
+	// canvas.style.width = canvas.width + 'px';
 	canvas.style.height = canvas.height + 'px';
 	ctx = canvas.getContext('2d');
 
