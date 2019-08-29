@@ -32,25 +32,25 @@ a.icon-nav:hover{
 }
 
 .landing{
-  padding: 50px;
+  /* padding: 50px; */
   position: relative;
   text-align: center;
   background-image: linear-gradient(#86cccc, #fff);
 }
 
 
-/* #landingVideo{
+#landingVideo{
   display: block;
   position: relative;
   min-width: 100%;
   min-height: 100%;
-} */
+}
 
 .btn {
-  /* position: absolute;
+  position: absolute;
   top: 69%;
   left: 50%;
-  transform: translate(-50%, -50%); */
+  transform: translate(-50%, -50%);
   width: 277px;
   height: 50px;
   font-size: 1.1em;
@@ -61,7 +61,7 @@ a.icon-nav:hover{
   font-family: 'News Cycle';
   font-weight:900;
   letter-spacing: 0.045em;
-  border: 2px solid #86CCCC;
+  border: 2px solid #fff;
 }
 
 /* Email Sign-Up Modal */
@@ -545,7 +545,7 @@ input[type=text]:focus, input[type=email]:focus {
 }
 
 /* Extra small devices (phones, 600px and down) */
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   #landingVideo {
     display: none;
   }
@@ -578,10 +578,10 @@ input[type=text]:focus, input[type=email]:focus {
   .social-media{
     padding-top: 20%;
   }
-} */
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   #landingVideo {
     display: none;
   }
@@ -614,10 +614,10 @@ input[type=text]:focus, input[type=email]:focus {
   .social-media{
     padding-top: 20%;
   }
-} */
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   #landingVideo {
     display: none;
   }
@@ -650,10 +650,10 @@ input[type=text]:focus, input[type=email]:focus {
   .social-media{
     padding-top: 10%;
   }
-} */
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) {
   #landingVideo {
     display: inline-block;
   }
@@ -670,10 +670,10 @@ input[type=text]:focus, input[type=email]:focus {
   .social-media{
     padding-top: 10%;
   }
-} */
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-/* @media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   #landingVideo {
     display: inline-block;
   }
@@ -690,7 +690,7 @@ input[type=text]:focus, input[type=email]:focus {
   .social-media{
     padding-top: 10%;
   }
-} */
+}
 
 
 /* Schedule */
