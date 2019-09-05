@@ -284,7 +284,7 @@ input[type=text]:focus, input[type=email]:focus {
   padding: 0 !important;
 }
 
-.row {
+/* .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -292,7 +292,7 @@ input[type=text]:focus, input[type=email]:focus {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
-}
+} */
 
 .no-gutters {
   margin-right: 0;
@@ -1018,9 +1018,27 @@ input[type=text]:focus, input[type=email]:focus {
   .element-item {
     position: relative;
     float: left;
-    width: 25%;
-    margin: 5px;
-    padding: 10px;
-    background: #86cccc;
-    color: #262524;
   }
+  /* Latest Blog Area css
+============================================================================================ */
+.l_blog_item .l_blog_text .date {
+  margin-bottom: 15px; }
+  .l_blog_item .l_blog_text .date a {
+    color: #777777;
+    font-family: "Roboto", sans-serif; }
+.l_blog_item .l_blog_text h4 {
+  color: #222222;
+  margin-bottom: 20px;
+  transition: all 300ms linear 0s;
+  font-family: "Heebo", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+  .l_blog_item .l_blog_text h4:hover {
+    color: #8490ff; }
+.l_blog_item .l_blog_text p {
+  margin-bottom: 0px;
+  font-family: "Roboto", sans-serif; }
+
+/* End Latest Blog Area css
+============================================================================================ */
