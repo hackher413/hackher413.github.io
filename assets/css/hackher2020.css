@@ -35,20 +35,33 @@ a.icon-nav:hover{
   /* padding: 50px; */
   position: relative;
   text-align: center;
-  background-image: linear-gradient(#86cccc, #fff);
+  /* background-image: linear-gradient(#86cccc, #fff); */
+}
+.container-landing{
+  width: 100%;
+  height:400px;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
 }
 
-
-#landingVideo{
+/* #landingVideo{
   display: block;
   position: relative;
   min-width: 100%;
   min-height: 100%;
+} */
+
+.headings{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .btn {
   position: absolute;
-  top: 69%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 277px;
@@ -125,10 +138,11 @@ input[type=text]:focus, input[type=email]:focus {
 }
 
 /* About */
-.about{
+#about{
   background-color: #ffffff;
   padding: 5%;
   display: inline-block;
+  width: 100%;
 }
 
 .about-heading{
@@ -423,7 +437,6 @@ input[type=text]:focus, input[type=email]:focus {
 .img-fluid {
   max-width: 100%;
   height: auto;
-  img-align: center;
 }
 
 .img-circle {
@@ -541,7 +554,7 @@ input[type=text]:focus, input[type=email]:focus {
 .social-media{
   padding: 20px;
   padding-top: 10%;
-  background-image: linear-gradient(to bottom, #E6F4F4 , #86CCCC);
+  background-color: #91DDCE;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -577,6 +590,20 @@ input[type=text]:focus, input[type=email]:focus {
 
   .social-media{
     padding-top: 20%;
+  }
+
+  iframe{
+    width: 100%;
+    padding-top: 20px;
+    margin: 0 auto;
+  }
+
+  .last-year-pic{
+    width: 350px;
+  }
+
+  .container-blog {
+    padding-left: 20px;
   }
 }
 
@@ -614,6 +641,17 @@ input[type=text]:focus, input[type=email]:focus {
   .social-media{
     padding-top: 20%;
   }
+  iframe{
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .last-year-pic{
+    width: 400px;
+  }
+  .container-blog {
+    padding-left: 20px;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -650,6 +688,17 @@ input[type=text]:focus, input[type=email]:focus {
   .social-media{
     padding-top: 10%;
   }
+  iframe{
+    width: 400px;
+    padding-top: 20px;
+  }
+
+  .last-year-pic{
+    width: 400px;
+  }
+  .container-blog {
+    padding-left: 100px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -670,6 +719,15 @@ input[type=text]:focus, input[type=email]:focus {
   .social-media{
     padding-top: 10%;
   }
+  iframe{
+    width: 400px;
+  }
+  .last-year-pic{
+    width: 400px;
+  }
+  .container-blog {
+    padding-left: 100px;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -689,6 +747,15 @@ input[type=text]:focus, input[type=email]:focus {
 
   .social-media{
     padding-top: 10%;
+  }
+  iframe{
+    width: 200%;
+  }
+  .last-year-pic{
+    width: 600px;
+  }
+  .container-blog {
+    padding-left: 100px;
   }
 }
 
@@ -950,9 +1017,7 @@ input[type=text]:focus, input[type=email]:focus {
 
   .container-blog {
     overflow: hidden;
-    padding-left: 100px;
     padding-top: 20px;
-
   }
 
   .filterDiv {
@@ -960,6 +1025,7 @@ input[type=text]:focus, input[type=email]:focus {
     background-color: #E3F6F2;
     color: #000;
     width: 350px;
+    height: 350px;
     text-align: center;
     padding: 10px;
     margin: 5px;
@@ -996,4 +1062,73 @@ input[type=text]:focus, input[type=email]:focus {
 
   .blog-img{
     max-height: 175px;
+    margin-bottom: 10px;
   }
+
+  /* Last Year's Event  */
+  .last-year{
+    text-align: center;
+  }
+
+  .last-year-content{
+    padding: 20px 0px;
+    font-size: 1.1em;
+  }
+
+  .last-year-para{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+  }
+
+
+
+  .last-year-button{
+    font-size: 1.2em;
+    background: #fff;
+    border-radius: 4px;
+    border: 2px solid #86cccc;
+    padding: 10px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+
+  .last-year-button:hover{
+    background: #86cccc;
+  }
+
+  /* Team */
+
+.team{
+  padding-top: 5%;
+  background-image: linear-gradient(to bottom, #fff , #91DDCE);
+}
+
+  /* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.team-info {
+  padding: 0 16px;
+  color: #000;
+  text-align: center;
+}
+
+/* Clear floats */
+.team-info::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.team-member{
+  width: 150px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.team-row{
+  padding: 10px 0px;
+}
