@@ -854,26 +854,23 @@ input[type=text]:focus, input[type=email]:focus {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* Some left and right padding inside the container */
-.team-info {
-  padding: 0 16px;
-  color: #000;
+.team-member {
+  margin-bottom: 50px;
   text-align: center;
 }
 
-/* Clear floats */
-.team-info::after{
-  content: "";
-  clear: both;
-  display: table;
+.team-member img {
+  width: 225px;
+  height: 225px;
+  border: 7px solid rgba(0, 0, 0, 0.1);
 }
 
-.team-member{
-  width: 150px;
-  padding: 10px;
-  margin: 0 auto;
+.team-member h4 {
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-transform: none;
 }
 
-.team-row{
-  padding: 10px 0px;
+.team-member p {
+  margin-top: 0;
 }
