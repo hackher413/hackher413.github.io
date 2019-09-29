@@ -33,9 +33,9 @@
 <body>
 
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar fixed-top navbar-expand-lg custom-nav">
   <a class="navbar-brand" href="https://www.hackher413.com">
-    <img src="assets/images/logos/2020hackher_logo.png" width="80" alt="HackHer413">
+    <img src="assets/images/logos/2020hackher_logo.png" width="60" alt="HackHer413">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -44,16 +44,25 @@
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item">
-        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link custom-nav" href="#about">About</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link custom-nav" href="#involved">Get Involved</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link custom-nav" href="#hackher-experience">Experience</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#sponsor-section">Sponsor</a>
+        <a class="nav-link custom-nav" href="#sponsor-section">Sponsor</a>
       </li>
+        <li class="nav-item">
+        <a class="nav-link custom-nav" href="#medium">Blog</a>
+        </li>
       <li class="nav-item">
-        <a class="nav-link" href="#social-media-feed">Connect</a>
+        <a class="nav-link custom-nav" href="#team">Our Team</a>
       </li>
     </ul>
-    <a class="nav-item justify-content-end" href="https://about.hackumass.com/opensource.html">Open Source Hackathon Resources</a>
+    <a class="nav-item custom-nav justify-content-end" href="https://about.hackumass.com/opensource.html">Open Source Hackathon Resources</a>
   </div>
 </nav>
 
@@ -210,6 +219,7 @@
     </section>
     
     <!-- Page Content -->
+    <section id="involved">
   <div class="container">
 	<br>
     <h2 class="lightbg-heading" style="text-align: center" >Get Involved</h2>
@@ -253,7 +263,7 @@
       </div>
     </div>
     </div>
-
+</section>
 
   <!-- HIGHLIGHTS -->
 	<section id="hackher-experience" class="greybg">
@@ -453,50 +463,44 @@
 </section>
 
 <!-- Medium articles -->
-  <section class="latest_blog_area">
+  <section id="medium" class="medium">
 
-      <h2 class="lightbg-heading">Medium Blog Posts</h2>
+      <h2 class="lightbg-heading blog-head">Medium Blog Posts</h2>
       <p>We post articles on internships and our tech stories! <a target="_blank" href="https://medium.com/hackher413">Follow us on Medium.</a></p>
 
-      <div id="button-group">
-        <button class="buttons active" onclick="filterSelection('all')">All Categories</button>
-        <button class="buttons" onclick="filterSelection('careers')">Careers++</button>
-        <button class="buttons" onclick="filterSelection('tech')">Computer Science and Technology</button>
-        <button class="buttons" onclick="filterSelection('thought')">Integrated Thought Environment</button>
-      </div>
-
-        <div class="container-blog">
-          <div class="filterDiv thought">
-            <div>
+      
+<div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            
               <img class="img-fluid blog-img" src="assets/images/medium/disconnect.png" alt="The Grand Canyon on a cold windy day">
-            </div>
-            <div>
+            
+            
               <a class="title" target="_blank" href="https://medium.com/hackher413/disconnect-b36e46da592e">
                 <h4>Disconnect</h4>
               </a>
               <p>Shreya Sharma<br />
                   5 September, 2019
               </p>
-            </div>
+            
           </div>
-          <div class="filterDiv tech">
-            <div>
+          <div class="col">
+            
               <img class="img-fluid blog-img" src="assets/images/medium/product.png" alt="The beautiful journey of a work as letterforms become art. Source: Imagine via Instagram, internationally renowned artist and expert kombucha brewer">
-            </div>
-            <div>
+            
+            
               <a class="title" target="_blank" href="https://medium.com/hackher413/creating-everyday-meaning-an-intro-to-product-design-134becc8d37f">
                 <h4>Creating Everyday Meaning: An Introduction to Product Design</h4>
               </a>
               <p>Rowena Leung <br />
                     26 August, 2019
               </p>
-            </div>
+            
           </div>
-          <div class="filterDiv tech">
-            <div>
+          <div class="col">
+            
               <img class="img-fluid blog-img" src="assets/images/medium/arduino-small.png" alt="Arduino">
-            </div>
-             <div>
+            
               <a class="title" target="_blank" href="https://medium.com/hackher413/introduction-to-arduino-5c694782b68f">
                 <h4>Introduction to Arduino</h4>
               </a>
@@ -504,90 +508,87 @@
                   13 August, 2019
               </p>
             </div>
-          </div>
-          <div class="filterDiv tech">
-            <div>
+          
+      </div>
+      <div class="row">
+          <div class="col">
+            
               <img class="img-fluid blog-img" src="assets/images/medium/inclusive-ml.png" alt="">
-            </div>
-            <div>
               <a class="title" target="_blank" href="https://medium.com/hackher413/10-methods-of-inclusive-machine-learning-34ad08748caf">
                 <h4>10 Methods of Inclusive Machine Learning</h4>
               </a>
               <p>Katie House <br />
                   26 July, 2019
               </p>
-            </div>
           </div>
-          <div class="filterDiv careers">
-            <div>
+          <div class="col">
+         
               <img class="img-fluid blog-img" src="assets/images/medium/fiu.png" alt="CSL and Adwise Research labs headed by Dr. Selcuk Uluagac and Dr. Kemal Akkaya respectively.">
-            </div>
-            <div>
+       
               <a class="title" target="_blank" href="https://medium.com/hackher413/an-reu-experience-at-fiu-78c49c129c35">
                 <h4>My Journey with Research Experience for Undergraduates at Florida International University</h4>
               </a>
               <p>Nandini Sivakumar <br />
                   15 July, 2019
                 </p>
-            </div>
+     
           </div>
-          <div class="filterDiv tech">
-            <div>
+          <div class="col">
+        
               <img class="img-fluid blog-img" src="assets/images/medium/ml101.png" alt="">
-            </div>
-            <div>
+       
               <a class="title" target="_blank" href="https://medium.com/hackher413/machinelearning101-8caeb4d2d63a">
                 <h4>Don’t Second Guess Yourself: Machine Learning 101</h4>
               </a>
               <p>Nila Sadeeshkumar <br />
                   7 July, 2019
               </p>
-            </div>
+
           </div>
-          <div class="filterDiv careers">
-            <div>
+      </div>
+      <div class="row">
+          <div class="col">
+          
               <img class="img-fluid blog-img" src="assets/images/medium/liberty.png" alt="">
-            </div>
-            <div>
+
               <a class="title" target="_blank" href="https://medium.com/hackher413/my-experience-at-the-liberty-mutual-women-in-tech-summit-bb3219179f">
                 <h4>My Experience at the Liberty Mutual Women in Technology Summit</h4>
               </a>
               <p>Vindhya Rachur <br />
                   1 July, 2019
               </p>
-            </div>
+         
           </div>
-          <div class="filterDiv thought">
-            <div>
+          <div class="col">
+          
               <img class="img-fluid blog-img" src="assets/images/medium/failure.png" alt="Failure">
-            </div>
-            <div>
+         
               <a class="title" target="_blank" href="https://medium.com/hackher413/overcoming-failure-829af1dd7389">
                 <h4>Overcoming Failure</h4>
               </a>
               <p>Michaela Digan <br />
                   25 June, 2019
               </p>
-            </div>
+            
           </div>
-          <div class="filterDiv careers">
-            <div>
+          <div class="col">
+           
               <img class="img-fluid blog-img" src="assets/images/medium/vmware.png" alt="">
-            </div>
-            <div>
+         
               <a class="title" target="_blank" href="https://medium.com/hackher413/software-engineering-intern-vmware-6ca153610a03">
                 <h4>Insight into the Life of a Software Engineering Intern @ VMware</h4>
               </a>
               <p>Juhi Shah <br />
                   17 June, 2019
               </p>
-            </div>
+        
           </div>
-          <div class="filterDiv thought">
-            <div>
+      </div>
+      <div class="row">
+          <div class="col">
+          
               <img class="img-fluid blog-img" src="assets/images/medium/fraud.png" alt="">
-            </div>
-            <div>
+           
               <a class="title" target="_blank" href="https://medium.com/hackher413/https-medium-com-hackher413-you-are-not-a-fraud-42dc2ac0f919">
                 <h4>You Are Not a Fraud: 3 Steps for Overcoming Impostor Syndrome</h4>
               </a>
@@ -595,8 +596,10 @@
                   4 June, 2019
               </p>
             </div>
-          </div>
+          <div class="col"></div>
+          <div class="col"></div>
         </div>
+    </div>
   </section>
   
   <!-- Team -->
@@ -933,7 +936,6 @@
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
    <script src="assets/js/landing.js"></script>
    <script src="assets/js/javascript-enabler.js"></script>
-   <script src="assets/js/medium-article.js"></script>
 
 
 

@@ -31,6 +31,11 @@ a.icon-nav:hover{
   color: #3FC4AA;
 }
 
+.custom-nav{
+    background-color: #E6F4F4;
+    color: #000;
+}
+
 .landing{
   position: relative;
   text-align: center;
@@ -451,9 +456,7 @@ input[type=text]:focus, input[type=email]:focus {
     width: 350px;
   }
 
-  .container-blog {
-    padding-left: 20px;
-  }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -477,9 +480,7 @@ input[type=text]:focus, input[type=email]:focus {
   .last-year-pic{
     width: 400px;
   }
-  .container-blog {
-    padding-left: 20px;
-  }
+  
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -503,9 +504,7 @@ input[type=text]:focus, input[type=email]:focus {
   .last-year-pic{
     width: 400px;
   }
-  .container-blog {
-    padding-left: 100px;
-  }
+  
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -523,9 +522,7 @@ input[type=text]:focus, input[type=email]:focus {
   .last-year-pic{
     width: 400px;
   }
-  .container-blog {
-    padding-left: 100px;
-  }
+  
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -543,9 +540,7 @@ input[type=text]:focus, input[type=email]:focus {
   .last-year-pic{
     width: 600px;
   }
-  .container-blog {
-    padding-left: 100px;
-  }
+  
 }
 
 
@@ -789,11 +784,6 @@ input[type=text]:focus, input[type=email]:focus {
     background-color: #E3F6F2;
   }
 
-  .latest_blog_area{
-    padding-top: 20px;
-    text-align: center;
-  }
-
   .blog-img{
     max-height: 175px;
     margin-bottom: 10px;
@@ -887,3 +877,12 @@ input[type=text]:focus, input[type=email]:focus {
 .card-footer{
     text-align: center;
 }
+
+.medium{
+    text-align: center;
+}
+
+.blog-head{
+    padding-top: 20px;
+}
+
