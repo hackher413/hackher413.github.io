@@ -874,3 +874,16 @@ input[type=text]:focus, input[type=email]:focus {
 .team-member p {
   margin-top: 0;
 }
+
+.apply-btns {
+    text-align: center;
+    background-color: #86cccc;
+    border: 1px solid #86cccc;
+    color: #fff;
+    font-size: 1.3em;
+    padding: 5px;
+    border-radius: 5px;
+}
+.card-footer{
+    text-align: center;
+}
