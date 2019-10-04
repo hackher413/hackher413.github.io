@@ -51,14 +51,14 @@ a.icon-nav:hover{
 
 .headings{
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .btn {
   position: absolute;
-  top: 75%;
+  top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 277px;
@@ -482,7 +482,7 @@ input[type=text]:focus, input[type=email]:focus {
   .last-year-pic{
     width: 400px;
   }
-  
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -506,7 +506,7 @@ input[type=text]:focus, input[type=email]:focus {
   .last-year-pic{
     width: 400px;
   }
-  
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -524,7 +524,7 @@ input[type=text]:focus, input[type=email]:focus {
   .last-year-pic{
     width: 400px;
   }
-  
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -542,7 +542,7 @@ input[type=text]:focus, input[type=email]:focus {
   .last-year-pic{
     width: 600px;
   }
-  
+
 }
 
 
@@ -788,7 +788,7 @@ input[type=text]:focus, input[type=email]:focus {
 
   .blog-img{
     max-height: 175px;
-      
+
     margin-bottom: 10px;
   }
 
@@ -888,4 +888,3 @@ input[type=text]:focus, input[type=email]:focus {
 .blog-head{
     padding-top: 20px;
 }
-
