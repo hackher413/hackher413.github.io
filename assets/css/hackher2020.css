@@ -826,3 +826,35 @@ input[type=text]:focus, input[type=email]:focus {
 .card-footer{
     text-align: center;
 }
+
+/* Tracks */
+.tracks{
+  padding: 40px;
+  background-color: #3FC4AA;
+}
+
+.tracks h3{
+  text-align: center;
+}
+
+.split{
+  padding: 15px;
+}
+
+.split li{
+  list-style:square;
+}
+/* Control the left side */
+.left-split {
+  background-color: #ACE5DA;
+}
+
+/* Control the right side */
+.right-split {
+  background-color: #E3F6F2;
+}
+
+.track-img{
+  width: 100px;
+  padding-bottom:  20px;
+}
