@@ -1,27 +1,6 @@
-// SUBSCRIBE BUTTON 
 
-    // Get the modal
-    var modal = document.getElementById("id01");
-    // Get the button that opens the modal
-    var btn = document.getElementById("btn");
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-    // When the user clicks the button, open the modal
-    btn.onclick = function() {
-      modal.style.display = "block";
-    }
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }  
-  
-// SCHEDULE JS 
+
+// SCHEDULE JS
   function ScheduleTemplate( element ) {
   this.element = element;
   this.timelineItems = this.element.getElementsByClassName('cd-schedule__timeline')[0].getElementsByTagName('li');
@@ -66,7 +45,7 @@ ScheduleTemplate.prototype.openModal = function(target) {
   this.loadEventContent(target.getAttribute('data-content'));
 
   Util.addClass(this.modal, 'cd-schedule-modal--open');
-  
+
   if( mq == 'mobile' ) {
     self.modal.addEventListener('transitionend', function cb(){
       self.animating = false;
@@ -87,7 +66,7 @@ ScheduleTemplate.prototype.openModal = function(target) {
 
     var modalTranslateX = parseInt((windowWidth - modalWidth)/2 - eventLeft),
       modalTranslateY = parseInt((windowHeight - modalHeight)/2 - eventTop);
-    
+
     var HeaderBgScaleY = modalHeight/eventHeight,
       BodyBgScaleX = (modalWidth - eventWidth);
 
@@ -101,7 +80,7 @@ ScheduleTemplate.prototype.openModal = function(target) {
     self.modalBodyBg.setAttribute('style', 'height:'+eventHeight+'px; width: 1px; transform: scaleY('+HeaderBgScaleY+') scaleX('+BodyBgScaleX+')');
     //change modal modalHeaderBg height/width and scale it
     self.modalHeaderBg.setAttribute('style', 'height: '+eventHeight+'px; width: '+eventWidth+'px; transform: scaleY('+HeaderBgScaleY+')');
-    
+
     self.modalHeaderBg.addEventListener('transitionend', function cb(){
       //wait for the  end of the modalHeaderBg transformation and show the modal content
       self.animating = false;
