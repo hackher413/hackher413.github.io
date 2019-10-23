@@ -65,11 +65,12 @@ a.icon-nav:hover{
   font-size: 1.1em;
   text-align: center;
   text-transform: uppercase;
-  cursor: pointer;
+  /* cursor: pointer; */
   text-decoration:none;
   font-family: 'News Cycle';
   font-weight:900;
   letter-spacing: 0.045em;
+  background-color: #E3F6F2;
   border: 2px solid #fff;
 }
 
@@ -116,7 +117,7 @@ input[type=text]:focus, input[type=email]:focus {
 
 .disable{
   cursor: not-allowed;
-  
+
 }
 
 /* The Close Button */
@@ -165,31 +166,6 @@ input[type=text]:focus, input[type=email]:focus {
   transform: rotate(15deg);
 }
 
-.separator {
-  position: relative;
-  width: 100%;
-}
-.separator::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 70px;
-  background-color: #E6F4F4;
-  clip-path: polygon(100% 0, 0 0, 0 100%);
-}
-.separator-heading{
-  font-size: 2em;
-  color: #56b8b8;
-  text-align: left;
-  font-family: 'News Cycle';
-}
-
-.separator-para{
-  padding-top: 10px;
-  text-align: left;
-  font-family: 'News Cycle';
-  font-size: 1.2em;
-}
 
 /* WHITE BG */
 .whitebg{
@@ -382,7 +358,6 @@ input[type=text]:focus, input[type=email]:focus {
   text-align:center;
   background-color: #fff;
   padding: 20px;
-  padding-top: 10%;
   border-bottom: 6px solid #fff;
 }
 
@@ -396,20 +371,6 @@ input[type=text]:focus, input[type=email]:focus {
     padding: 20px;
 }
 
-.diagonal{
-  position: relative;
-  width: 100%;
-}
-
-.diagonal::before{
-  position: absolute;
-  content: "";
-  background-color: #fff;
-  width: 100%;
-  height: 70px;
-  clip-path: polygon(100% 0, 0 0, 0 100%);
-
-}
 
 #lab_social_icon_footer a {
   color: #333;
@@ -444,9 +405,6 @@ input[type=text]:focus, input[type=email]:focus {
     padding-left: 0;
     padding-right: 0;
   }
-  .sponsor-section{
-    padding-top: 20%;
-  }
 
   .social-media{
     padding-top: 20%;
@@ -458,9 +416,6 @@ input[type=text]:focus, input[type=email]:focus {
     margin: 0 auto;
   }
 
-  .last-year-pic{
-    width: 350px;
-  }
 
 
 }
@@ -471,9 +426,6 @@ input[type=text]:focus, input[type=email]:focus {
     padding-left: 0;
     padding-right: 0;
   }
-  .sponsor-section{
-    padding-top: 20%;
-  }
 
   .social-media{
     padding-top: 20%;
@@ -483,9 +435,6 @@ input[type=text]:focus, input[type=email]:focus {
     padding-top: 20px;
   }
 
-  .last-year-pic{
-    width: 400px;
-  }
 
 }
 
@@ -495,9 +444,6 @@ input[type=text]:focus, input[type=email]:focus {
     padding-left: 0;
     padding-right: 0;
   }
-  .sponsor-section{
-    padding-top: 10%;
-  }
 
   .social-media{
     padding-top: 10%;
@@ -507,25 +453,16 @@ input[type=text]:focus, input[type=email]:focus {
     padding-top: 20px;
   }
 
-  .last-year-pic{
-    width: 400px;
-  }
 
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .sponsor-section{
-    padding-top: 10%;
-  }
 
   .social-media{
     padding-top: 10%;
   }
   iframe{
-    width: 400px;
-  }
-  .last-year-pic{
     width: 400px;
   }
 
@@ -533,9 +470,6 @@ input[type=text]:focus, input[type=email]:focus {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .sponsor-section{
-    padding-top: 10%;
-  }
 
   .social-media{
     padding-top: 10%;
@@ -543,9 +477,7 @@ input[type=text]:focus, input[type=email]:focus {
   iframe{
     width: 200%;
   }
-  .last-year-pic{
-    width: 600px;
-  }
+
 
 }
 
@@ -751,39 +683,39 @@ input[type=text]:focus, input[type=email]:focus {
 
   /* Last Year's Event  */
   .last-year{
-    text-align: center;
-    background-image: linear-gradient(to bottom, #86cccc, #ACE5DA);
+    background-color: #86cccc;
     padding: 3% 0;
   }
 
   .last-year-content{
-    padding: 20px 0px;
     font-size: 1.1em;
   }
 
-  .last-year-para{
-    padding-top: 10%;
-    padding-bottom: 10%;
-    padding-left: 5%;
+  .last-year-facts{
+    text-align: left;
+    list-style-type: square;
   }
 
+  .last-year-pic{
+    width: 100%;
+  }
 
+  .highlight{
+  background: linear-gradient(180deg,rgba(255,255,255,0) 60%, #3FC4AA 40%);
+  }
 
-  .last-year-button{
-    font-size: 1.2em;
-    background: #E3F6F2;
-    border-radius: 4px;
-    border: 2px solid #fff;
-    padding: 10px;
+  .highlight:hover {
+  background: linear-gradient(180deg,rgba(255,255,255,0) 80%, #3FC4AA 40%);
+  }
+
+  .last-year-link{
+    color: #fff;
+    font-size: 1.1em;
+    padding-left: 40px;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
   }
 
-  .last-year-button:hover{
-    background: #fff;
-    color: #000;
-    border: 2px solid #86CCCC;
-  }
 
   /* Team */
 
