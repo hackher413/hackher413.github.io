@@ -301,6 +301,10 @@ input[type=text]:focus, input[type=email]:focus {
     margin-right: auto
 }
 
+.workshop-img{
+  width: 200px;
+}
+
 #portfolio .container-fluid {
   max-width: 1920px;
 }
@@ -465,6 +469,13 @@ input[type=text]:focus, input[type=email]:focus {
   iframe{
     width: 400px;
   }
+  .vl{
+    border-left: 3px dashed #86cccc;
+  }
+  .coming-soon{
+    padding-top: 20%;
+    padding-bottom: 20%;
+  }
 
 }
 
@@ -477,7 +488,13 @@ input[type=text]:focus, input[type=email]:focus {
   iframe{
     width: 200%;
   }
-
+  .vl{
+    border-left: 3px dashed #86cccc;
+  }
+  .coming-soon{
+    padding-top: 20%;
+    padding-bottom: 20%;
+  }
 
 }
 
@@ -785,4 +802,19 @@ input[type=text]:focus, input[type=email]:focus {
 .track-img{
   width: 100px;
   padding-bottom:  20px;
+}
+
+.coming-soon{
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  -ms-transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+}
+
+.workshops{
+  margin-bottom: 10px;
 }
