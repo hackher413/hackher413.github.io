@@ -31,6 +31,14 @@ a.icon-nav:hover{
   color: #3FC4AA;
 }
 
+#mlh-trust-badge{
+  display:block;
+  max-width:100px;
+  min-width:60px;
+  width:10%;
+  z-index:10000;
+}
+
 .custom-nav{
     background-color: #E6F4F4;
     color: #000;
@@ -477,6 +485,12 @@ input[type=text]:focus, input[type=email]:focus {
     padding-bottom: 20%;
   }
 
+  #mlh-trust-badge{
+    position:absolute;
+    right:0px;
+    top:0;
+  }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -494,6 +508,12 @@ input[type=text]:focus, input[type=email]:focus {
   .coming-soon{
     padding-top: 20%;
     padding-bottom: 20%;
+  }
+
+  #mlh-trust-badge{
+    position:absolute;
+    right:0px;
+    top:0;
   }
 
 }
