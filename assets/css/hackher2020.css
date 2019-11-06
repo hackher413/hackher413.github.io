@@ -840,3 +840,17 @@ input[type=text]:focus, input[type=email]:focus {
 .workshops{
   margin-bottom: 10px;
 }
+
+#faq{
+  background-color: #86cccc;
+  padding: 50px;
+}
+
+.faq-heading{
+  padding-bottom: 20px;
+}
+
+.faq-tile{
+  text-align: center;
+  margin: 10px auto;
+}
