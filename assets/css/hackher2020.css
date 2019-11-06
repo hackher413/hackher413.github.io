@@ -33,9 +33,11 @@ a.icon-nav:hover{
 
 #mlh-trust-badge{
   display:block;
-  max-width:100px;
+  max-width:150px;
   min-width:60px;
   width:10%;
+  left:100px;
+  position:absolute;
   z-index:10000;
 }
 
