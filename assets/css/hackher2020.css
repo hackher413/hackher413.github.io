@@ -36,9 +36,9 @@ a.icon-nav:hover{
   max-width:150px;
   min-width:60px;
   width:10%;
-  left:100px;
   position:absolute;
-  z-index:10000;
+  top: 60px;
+  right: 0px;
 }
 
 .custom-nav{
@@ -65,7 +65,7 @@ a.icon-nav:hover{
   transform: translate(-50%, -50%);
 }
 
-.btn {
+.button {
   position: absolute;
   top: 85%;
   left: 50%;
@@ -487,11 +487,7 @@ input[type=text]:focus, input[type=email]:focus {
     padding-bottom: 20%;
   }
 
-  #mlh-trust-badge{
-    position:absolute;
-    right:0px;
-    top:0;
-  }
+
 
 }
 
@@ -512,11 +508,6 @@ input[type=text]:focus, input[type=email]:focus {
     padding-bottom: 20%;
   }
 
-  #mlh-trust-badge{
-    position:absolute;
-    right:0px;
-    top:0;
-  }
 
 }
 
