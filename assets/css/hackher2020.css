@@ -795,7 +795,7 @@ input[type=text]:focus, input[type=email]:focus {
 
 /* Tracks */
 .tracks{
-  padding: 40px;
+  padding-bottom: 40px;
 }
 
 .tracks h3{
@@ -844,4 +844,22 @@ input[type=text]:focus, input[type=email]:focus {
 .faq-tile{
   text-align: center;
   margin: 10px auto;
+}
+
+#press{
+  padding: 50px;
+}
+
+.press-heading{
+  padding-bottom: 20px;
+}
+
+.newsImg{
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.news{
+  text-align: center;
 }
