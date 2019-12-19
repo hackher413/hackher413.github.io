@@ -313,6 +313,7 @@ input[type=text]:focus, input[type=email]:focus {
 
 .workshop-img{
   width: 200px;
+  height: 200px;
 }
 
 #portfolio .container-fluid {
