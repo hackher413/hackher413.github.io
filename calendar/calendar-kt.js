@@ -11,9 +11,9 @@
 
      // find the placement on the grid
      if (hours - 8 >= 0) { // if after 8am
-         var placement = (hours - 8) * 60 + minutes - 3;
+         var placement = (hours - 8) * 60 + minutes - 2;
      } else {
-         var placement = hours * 60 + minutes - 3;
+         var placement = hours * 60 + minutes - 2;
      }
      // adjust the first event if negative
      if (placement < 0) {
@@ -113,9 +113,11 @@
                  var desc = fields[0];
                  var beginner = fields[1];
                  if (beginner != undefined) {
-                     data[i]["title"] = truncate(desc) + " (" + beginner
+                     data[i]["abbr_title"] = truncate(desc)
+                     data[i]["title_desc"] = " (" + beginner
                  } else {
-                     data[i]["title"] = truncate(desc)
+                     data[i]["abbr_title"] = truncate(desc)
+                     data[i]["title_desc"] = ""
                  }
 
                  // if the time is before 8am, show the day before
@@ -136,6 +138,7 @@
              // only show the current calenday day
              final_data = data.filter(d => d.dayofweek == dayofweek);
 
+             // Facebook Calendar Widget
              var FB = FB || {};
              FB.Widgets = FB.Widgets || {};
              FB.Widgets.DayCalender = FB.Widgets.DayCalender || {
@@ -168,7 +171,6 @@
                          this.resultArr.push(this.currColArr);
                          this.currColArr = [];
                          this.startWhereLeftOff = 0;
-                         console.dir(this.resultArr);
                      } while (this.givenArr.length);
                  },
                  _generateColumnEvents: function () {
@@ -186,7 +188,7 @@
                      } while (condition);
                  },
                  _determineCollisions: function () {
-                     for (var i = this.startWhereLeftOff; i < this.givenArr.length; i++) {
+                     for (var i = 1; i < this.givenArr.length; i++) {
                          if (this._noCollision(this.pivot, this.givenArr[i])) {
                              return {
                                  evt: this.givenArr[i],
@@ -205,7 +207,7 @@
                      pivot.top = pivot.start;
                      pivot.height = pivot.end - pivot.start;
                      pivot.width = (!this.resultArr.length) ? this.CONTAINER_WIDTH : Math.floor(this.CONTAINER_WIDTH / (this.resultArr.length + 1));
-                     pivot.left = (pivot.width * this.resultArr.length) + 10;
+                     pivot.left = (pivot.width * this.resultArr.length);
                  },
                  adjustWidth: function (order, times) {
                      do {
@@ -233,21 +235,20 @@
                      for (var i = 0; i < this.resultArr[colIndex].length; i++) { // nth column iteration
                          for (var j = 0; j < this.resultArr[comparatorColIndex].length; j++) {
                              console.log("Comparing event " + this.resultArr[colIndex][i]["id"] + " with event " + this.resultArr[comparatorColIndex][j]["id"]);
-                             var condition1 = condition2 = condition3 = false;
-                             condition1 = ((this.resultArr[colIndex][i]["start"] > this.resultArr[comparatorColIndex][j]["start"]) && (this.resultArr[colIndex][i]["start"] < this.resultArr[comparatorColIndex][j]["end"]));
-                             condition2 = (((this.resultArr[colIndex][i]["start"] >= this.resultArr[comparatorColIndex][j]["start"]) && (this.resultArr[colIndex][i]["end"] <= this.resultArr[comparatorColIndex][j]["end"])) || ((this.resultArr[colIndex][i]["start"] <= this.resultArr[comparatorColIndex][j]["start"]) && (this.resultArr[colIndex][i]["end"] >= this.resultArr[comparatorColIndex][j]["end"])));
-                             condition3 = ((this.resultArr[colIndex][i]["end"] > this.resultArr[comparatorColIndex][j]["start"]) && (this.resultArr[colIndex][i]["end"] < this.resultArr[comparatorColIndex][j]["end"]));
+                             var condition1 = condition2 = false;
+                             condition1 = ((this.resultArr[colIndex][i]["start"] <= this.resultArr[comparatorColIndex][j]["start"]) && (this.resultArr[colIndex][i]["end"] > this.resultArr[comparatorColIndex][j]["start"]));
+                             condition3 = ((this.resultArr[colIndex][i]["start"] > this.resultArr[comparatorColIndex][j]["start"]) && (this.resultArr[colIndex][i]["start"] < this.resultArr[comparatorColIndex][j]["end"]));
                              if (condition1 || condition2 || condition3) {
-                                 console.log("Column " + this.resultArr[colIndex][i]["id"] + " collides with " + this.resultArr[comparatorColIndex][j]["id"]);
-                                 console.log("Adjusting the width of " + this.resultArr[comparatorColIndex][j]["id"] + " to " + this.resultArr[colIndex][i]["width"]);
+                                 //console.log("Column " + this.resultArr[colIndex][i]["id"] + " collides with " + this.resultArr[comparatorColIndex][j]["id"]);
+                                 //console.log("Adjusting the width of " + this.resultArr[comparatorColIndex][j]["id"] + " to " + this.resultArr[colIndex][i]["width"]);
                                  if (this.resultArr[colIndex][i]["width"] > this.resultArr[comparatorColIndex][j]["width"]) {
                                      this.resultArr[colIndex][i]["width"] = this.resultArr[comparatorColIndex][j]["width"];
                                  }
                                  if (this.resultArr[colIndex][i]["width"] < this.resultArr[comparatorColIndex][j]["width"]) {
                                      this.resultArr[comparatorColIndex][j]["width"] = this.resultArr[colIndex][i]["width"];
                                  }
-                                 this.resultArr[comparatorColIndex][j]["left"] = (this.resultArr[comparatorColIndex][j]["width"] * comparatorColIndex) + 10;
-                                 console.log("Adjusted the leftpos of " + this.resultArr[comparatorColIndex][j]["id"] + " to " + this.resultArr[comparatorColIndex][j]["left"]);
+                                 this.resultArr[comparatorColIndex][j]["left"] = (this.resultArr[comparatorColIndex][j]["width"] * comparatorColIndex);
+                                 //console.log("Adjusted the leftpos of " + this.resultArr[comparatorColIndex][j]["id"] + " to " + this.resultArr[comparatorColIndex][j]["left"]);
                              }
                          }
                      }
@@ -264,12 +265,14 @@
                                      'px; height:' + this.resultArr[i][j]["height"] + 'px;' +
                                      'background-color:' + this.resultArr[i][j]["color"] + ';' +
                                      'border-left: 4px solid' + this.resultArr[i][j]["bcolor"] + ';' +
-                                     'px"><span class="evt-txt">' + this.resultArr[i][j]["title"] + '</span><br>' +
+                                     'px"><span class="evt-txt">' + this.resultArr[i][j]["abbr_title"] + '</span>' +
+                                     '<span class="beg-txt">' + this.resultArr[i][j]["title_desc"] + "</span><br>" +
                                      this.resultArr[i][j]["start_time"] +
                                      this.resultArr[i][j]["end_time"] + ", " +
                                      this.resultArr[i][j]["location"] +
 
                                      '<span class="tooltiptext">' +
+                                     "<b>" + this.resultArr[i][j]["title"] + ":</b><br>" +
                                      this.resultArr[i][j]["description"] + '</span></div></div>';
                              }
                          }

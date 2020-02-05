@@ -1,5 +1,5 @@
 body {
-    font: normal 11px "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font: normal 10px "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     zoom: 1.5;
     -moz-transform: scale(1.5);
     -moz-transform-origin: 0 0;
@@ -30,13 +30,21 @@ p {
     font-weight: bold;
 }
 
+.beg-txt {
+    color: #79b8b8;
+}
+
 .day-event-container {
     position: relative;
     float: none;
     height: 1080px;
     width: 70%;
     max-width: 620px;
-    margin-left: 90px;
+    margin-left: 20%;
+}
+
+.calendar-text-container {
+    margin-left: 7%;
 }
 
 .day-event {
@@ -87,10 +95,10 @@ span.hour {
     width: 200px;
     background-color: #343a40;
     color: white;
-    text-align: center;
-    border-radius: 6px;
+    border-radius: 7px;
     border: 0.5px solid lightgrey;
-    padding: 7px 0;
+    text-align: left;
+    padding: 5px;
     /* Position the tooltip */
     position: absolute;
     z-index: 1;

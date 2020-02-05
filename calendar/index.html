@@ -8,51 +8,53 @@
 
     <body>
         <div class="container">
-            <div style="padding-left:35%;">
-                <img src="logo.png" style="width:25%;"><br><br>
+            <div style="text-align:center;">
+                <img src="logo.png" style="width:22%;"><br><br>
                 <button onclick="getCalendar(6,'Saturday, February 8th')" class="button-secondary">Saturday</button>
                 <button onclick="getCalendar(0, 'Sunday, February 9th')" class="button-secondary">Sunday</button>
             </div>
-            <p id="date" style="margin:20px !important;">Saturday, February 8th</p>
-            <ol>
-                <li><span class="hour">8:00</span> AM</li>
-                <li>8:30</li>
-                <li><span class="hour">9:00 AM</li>
-                <li>9:30</li>
-                <li><span class="hour">10:00</span> AM</li>
-                <li>10:30</li>
-                <li><span class="hour">11:00</span> PM</li>
-                <li>11:30</li>
-                <li><span class="hour">12:00</span> PM</li>
-                <li>12:30</li>
-                <li><span class="hour">1:00</span> PM</li>
-                <li>1:30</li>
-                <li><span class="hour">2:00</span> PM</li>
-                <li>2:30</li>
-                <li><span class="hour">3:00</span> PM</li>
-                <li>3:30</li>
-                <li><span class="hour">4:00</span> PM</li>
-                <li>4:30</li>
-                <li><span class="hour">5:00</span> PM</li>
-                <li>5:30</li>
-                <li><span class="hour">6:00</span> PM</li>
-                <li>6:30</li>
-                <li><span class="hour">7:00</span> PM</li>
-                <li>7:30</li>
-                <li><span class="hour">8:00</span> PM</li>
-                <li>8:30</li>
-                <li><span class="hour">9:00</span> PM</li>
-                <li>9:30</li>
-                <li><span class="hour">10:00</span> PM</li>
-                <li>10:30</li>
-                <li><span class="hour">11:00</span> PM</li>
-                <li>11:30</li>
-                <hr>
-                <li><span class="hour">12:00</span> AM</li>
-                <li>12:30</li>
-                <li><span class="hour">1:00</span> AM</li>
-                <li>1:30</li>
-            </ol>
+            <div class="calendar-text-container">
+                <p id="date" style="margin:20px !important;">Saturday, February 8th</p>
+                <ol>
+                    <li><span class="hour">8:00</span> AM</li>
+                    <li>8:30</li>
+                    <li><span class="hour">9:00 AM</li>
+                    <li>9:30</li>
+                    <li><span class="hour">10:00</span> AM</li>
+                    <li>10:30</li>
+                    <li><span class="hour">11:00</span> PM</li>
+                    <li>11:30</li>
+                    <li><span class="hour">12:00</span> PM</li>
+                    <li>12:30</li>
+                    <li><span class="hour">1:00</span> PM</li>
+                    <li>1:30</li>
+                    <li><span class="hour">2:00</span> PM</li>
+                    <li>2:30</li>
+                    <li><span class="hour">3:00</span> PM</li>
+                    <li>3:30</li>
+                    <li><span class="hour">4:00</span> PM</li>
+                    <li>4:30</li>
+                    <li><span class="hour">5:00</span> PM</li>
+                    <li>5:30</li>
+                    <li><span class="hour">6:00</span> PM</li>
+                    <li>6:30</li>
+                    <li><span class="hour">7:00</span> PM</li>
+                    <li>7:30</li>
+                    <li><span class="hour">8:00</span> PM</li>
+                    <li>8:30</li>
+                    <li><span class="hour">9:00</span> PM</li>
+                    <li>9:30</li>
+                    <li><span class="hour">10:00</span> PM</li>
+                    <li>10:30</li>
+                    <li><span class="hour">11:00</span> PM</li>
+                    <li>11:30</li>
+                    <hr>
+                    <li><span class="hour">12:00</span> AM</li>
+                    <li>12:30</li>
+                    <li><span class="hour">1:00</span> AM</li>
+                    <li>1:30</li>
+                </ol>
+            </div>
             <div id="day-event-container" class="day-event-container">
             </div>
             <script src="calendar-kt.js"></script>
