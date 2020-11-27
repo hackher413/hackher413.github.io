@@ -15,7 +15,7 @@ h1, h2{
 }
 
 a{
-  color: #56B8B8;
+  color: #feba86;
 }
 
 a:hover{
@@ -28,7 +28,7 @@ a.icon-nav{
 }
 
 a.icon-nav:hover{
-  color: #3FC4AA;
+  color: #ffce8c;
 }
 
 #mlh-trust-badge{
@@ -42,7 +42,7 @@ a.icon-nav:hover{
 }
 
 .custom-nav{
-    background-color: #E6F4F4;
+    background-color: #feba86;
     color: #000;
 }
 
@@ -159,7 +159,7 @@ input[type=text]:focus, input[type=email]:focus {
 
 .about-heading{
   font-size: 2em;
-  color: #56b8b8;
+  color: #feba86;
   text-align: center;
   font-family: 'News Cycle';
 }
@@ -237,7 +237,7 @@ input[type=text]:focus, input[type=email]:focus {
 
 /* Dark Section Speaker */
 .darkbg{
-  background-color: #56b8b8;
+  background: linear-gradient(#feba86, #ffce8c);
   padding: 5%;
   display: inline-block;
 }
@@ -254,7 +254,7 @@ input[type=text]:focus, input[type=email]:focus {
   font-family: 'News Cycle';
   font-size: 1.2em;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
 }
 
 /* Light Blue Section */
@@ -544,7 +544,7 @@ input[type=text]:focus, input[type=email]:focus {
       line-height: 60px; }
   .feature_item h4 {
   	text-align: center;
-    color: #56b8b8;
+    color: #feba86;
     font-size: 19px;
     font-family: "Heebo", sans-serif;
     font-weight: bold;
@@ -690,7 +690,7 @@ input[type=text]:focus, input[type=email]:focus {
 #venue-section{
   display: block;
   text-align:center;
-  background: linear-gradient(#86cccc, #E6F4F4);
+  background: linear-gradient(#feba86, #ffce8c);
   padding: 20px;
   padding-top: 35px;
   border-bottom: 6px solid #E6F4F4;
@@ -714,7 +714,7 @@ input[type=text]:focus, input[type=email]:focus {
 
   /* Last Year's Event  */
   .last-year{
-    background-color: #86cccc;
+    background-color: #feba86;
     padding: 3% 0;
   }
 
@@ -736,7 +736,7 @@ input[type=text]:focus, input[type=email]:focus {
   }
 
   .highlight:hover {
-  background: linear-gradient(180deg,rgba(255,255,255,0) 80%, #3FC4AA 40%);
+  background: linear-gradient(180deg,rgba(255,255,255,0) 80%, #feba86 40%);
   }
 
   .last-year-link{
@@ -746,6 +746,7 @@ input[type=text]:focus, input[type=email]:focus {
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
   }
+
 
 
   /* Team */
@@ -834,7 +835,7 @@ input[type=text]:focus, input[type=email]:focus {
 }
 
 #faq{
-  background-color: #86cccc;
+  background-color: #ffce8c;
   padding: 50px;
 }
 
@@ -1041,7 +1042,7 @@ input[type=text]:focus, input[type=email]:focus {
 
 }
 .events-detail li:hover {
-  background: #B6E0E0;
+  background: #feba86;
 }
 .event-time {
   font-weight: 900;
