@@ -12,6 +12,7 @@ h1, h2{
   font-family: din-condensed, sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: black;
 }
 
 a{
@@ -90,7 +91,7 @@ a.icon-nav:hover{
 }
 
 .custom-nav{
-    background-color: white;
+    background-color: #688D5C;
     color: #000;
 }
 
@@ -102,7 +103,7 @@ a.icon-nav:hover{
   height:400px;
   margin: 0;
   padding: 0;
-  background-color: #fff;
+  background-color: #ABDD9E;
 }
 
 
@@ -256,7 +257,7 @@ input[type=text]:focus, input[type=email]:focus {
 
 /* GREY BG */
 .greybg{
-  background-color: #f9f9ff;
+  background-color: #f7fff9;
   padding: 5%;
   display: inline-block;
 }
