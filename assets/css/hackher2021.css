@@ -29,7 +29,7 @@ a.icon-nav{
 }
 
 a.icon-nav:hover{
-  color: #ffce8c;
+  color: #ABDD9E;
 }
 
 #mlh-trust-badge{
@@ -129,7 +129,7 @@ a.icon-nav:hover{
   font-family: 'News Cycle';
   font-weight:900;
   letter-spacing: 0.045em;
-  background-color: #fffb93;
+  background-color: #ABDD9E;
   border: 2px solid #fff;
 }
 
@@ -167,7 +167,7 @@ input[type=text]:focus, input[type=email]:focus {
 
 /* Modal Content */
 .modal-content {
-  background-color: #86CCCC;
+  background-color: #ABDD9E;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
@@ -395,7 +395,7 @@ input[type=text]:focus, input[type=email]:focus {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(244, 98, 58, 0.9);
+  background: #688D5C;
   -webkit-transition: opacity 0.25s ease;
   transition: opacity 0.25s ease;
   text-align: center;
@@ -530,7 +530,7 @@ input[type=text]:focus, input[type=email]:focus {
     width: 400px;
   }
   .vl{
-    border-left: 3px dashed #86cccc;
+    border-left: 3px dashed #ABDD9E;
   }
   .coming-soon{
     padding-top: 20%;
@@ -551,7 +551,7 @@ input[type=text]:focus, input[type=email]:focus {
     width: 200%;
   }
   .vl{
-    border-left: 3px dashed #86cccc;
+    border-left: 3px dashed #ABDD9E;
   }
   .coming-soon{
     padding-top: 20%;
@@ -578,7 +578,7 @@ input[type=text]:focus, input[type=email]:focus {
   margin-bottom: -30px; }
 
 .feature_item {
-  padding: 50px 35px;
+  padding: 25px 20px;
   border-radius: 10px;
   transition: all 300ms linear 0s;
   background: #fff;
@@ -609,7 +609,7 @@ input[type=text]:focus, input[type=email]:focus {
     box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.08);
     border-color: #fff; }
     .feature_item:hover i:before {
-      background: linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
+      background: linear-gradient(to right, #4F7344 0%, #688D5C 70%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
 
@@ -680,7 +680,7 @@ input[type=text]:focus, input[type=email]:focus {
   border-radius: 5px; }
   .wel_item i {
     font-size: 24px;
-    background: linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
+    background: linear-gradient(to right, #4F7344 0%, #688D5C 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
   .wel_item h4 {
@@ -729,9 +729,9 @@ input[type=text]:focus, input[type=email]:focus {
         border-radius: 5px;
         vertical-align: middle;
         align-self: center;
-        background-image: -moz-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
-        background-image: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
-        background-image: -ms-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%); }
+        background-image: -moz-linear-gradient(0deg, #4F7344 0%, #688D5C 100%);
+        background-image: -webkit-linear-gradient(0deg, #4F7344 0%, #688D5C 100%);
+        background-image: -ms-linear-gradient(0deg, #4F7344 0%, #688D5C 100%); }
 
 /* End Welcome Area css
 ============================================================================================ */
@@ -778,10 +778,11 @@ input[type=text]:focus, input[type=email]:focus {
 
   .last-year-pic{
     width: 100%;
+    padding-top: 40px;
   }
 
   .highlight{
-  background: linear-gradient(180deg,rgba(255,255,255,0) 60%, #3FC4AA 40%);
+  background: linear-gradient(180deg,rgba(255,255,255,0) 60%, #4F7344 40%);
   }
 
   .highlight:hover {
@@ -833,8 +834,8 @@ input[type=text]:focus, input[type=email]:focus {
 
 .apply-btns {
     text-align: center;
-    background-color: #86cccc;
-    border: 1px solid #86cccc;
+    background-color: #688D5C;
+    border: 1px solid #688D5C;
     color: #fff;
     font-size: 1.3em;
     padding: 5px;
@@ -883,13 +884,15 @@ input[type=text]:focus, input[type=email]:focus {
   margin-bottom: 10px;
 }
 
+/* FAQ Section */
+
 #faq{
   background-color: #4F7344;
-  padding: 50px;
+  padding: 20px;
 }
 
 .faq-heading{
-  padding-bottom: 20px;
+  padding-bottom: 5px;
 }
 
 .faq-tile{
@@ -950,7 +953,7 @@ input[type=text]:focus, input[type=email]:focus {
   height: 25px;
   right: -17px;
   background-color: white;
-  border: 4px solid #86cccc;
+  border: 4px solid #688D5C;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
