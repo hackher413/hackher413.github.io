@@ -1,7 +1,7 @@
-var hexagon_radius = 65;
+var hexagon_radius = 45;
 var hexagon_max_absolute_speed = 0.05;
-var hexagon_space_between = 2;
-var hexagon_color = '#ccfebf';
+var hexagon_space_between = 1;
+var hexagon_color = '#b4f29c';
 var hexagon_line_width = 2;
 
 var changing_colors = false;
