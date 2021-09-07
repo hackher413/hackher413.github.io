@@ -877,6 +877,7 @@ input[type=text]:focus, input[type=email]:focus {
 /* Tracks */
 .tracks{
   padding-bottom: 40px;
+  padding-top: 40px;
 }
 
 .tracks h3{
@@ -886,7 +887,7 @@ input[type=text]:focus, input[type=email]:focus {
 .split{
   padding: 10px;
   margin: 0 auto;
-  background-color: #E3F6F2;
+  background-color: #b7cfb0;
 }
 
 .split li{
