@@ -877,7 +877,7 @@ input[type=text]:focus, input[type=email]:focus {
 /* Tracks */
 .tracks{
   padding-bottom: 40px;
-  padding-top: 40px;
+  /* padding-top: 40px; */
 }
 
 .tracks h3{
