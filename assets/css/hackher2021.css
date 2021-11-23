@@ -961,8 +961,8 @@ input[type=text]:focus, input[type=email]:focus {
 
 /* Tracks */
 .tracks{
-  padding-bottom: 40px;
-  /* padding-top: 40px; */
+  background-color: #4F7344;
+  padding: 3% 0;
 }
 
 .tracks h3{
