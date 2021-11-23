@@ -297,6 +297,14 @@ input[type=text]:focus, input[type=email]:focus {
   font-size: 1.2em;
 }
 
+.about-para-state{
+  padding-top: 10px;
+  text-align: center;
+  font-family: 'News Cycle';
+  font-size: 1.2em;
+  font-style: italic;
+}
+
 .about-bee{
   width: 200px;
   transform: rotate(15deg);
