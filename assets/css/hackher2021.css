@@ -422,9 +422,9 @@ input[type=text]:focus, input[type=email]:focus {
 
 /* Light Blue Section */
 .lightbg{
-  background-color: #E6F4F4;
+  background-color: #f8f9fa;
   padding: 5%;
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 .lightbg-heading{
