@@ -114,6 +114,8 @@ a.icon-nav:hover{
   transform: translate(-50%, -50%);
 }
 
+
+
 .button {
   position: absolute;
   top: 85%;
@@ -278,7 +280,9 @@ input[type=text]:focus, input[type=email]:focus {
 /* About */
 #about{
   background-color: #ffffff;
-  padding: 5%;
+  /* padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%; */
   display: inline-block;
   width: 100%;
 }
@@ -310,12 +314,39 @@ input[type=text]:focus, input[type=email]:focus {
   transform: rotate(15deg);
 }
 
+.hopper-heading{
+  font-size: 2em;
+  color: #40744C;
+  text-align: center;
+  font-family: 'News Cycle';
+}
+
+.hopper-para{
+  padding-top: 10px;
+  text-align: center;
+  font-family: 'News Cycle';
+  font-size: 1.2em;
+}
+
+.hopper-para-state{
+  padding-top: 10px;
+  text-align: center;
+  font-family: 'News Cycle';
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+.hopper-bee{
+  width: 200px;
+  transform: rotate(15deg);
+}
+
 
 /* WHITE BG */
 .whitebg{
   background-color: #ffffff;
   padding: 5%;
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 .whitebg-heading{
@@ -664,6 +695,7 @@ input[type=text]:focus, input[type=email]:focus {
   iframe{
     width: 200%;
   }
+  
   .vl{
     border-left: 3px dashed #ABDD9E;
   }
@@ -673,6 +705,10 @@ input[type=text]:focus, input[type=email]:focus {
   }
 
 
+}
+
+.text-left iframe {
+  width: 100%;
 }
 
 
