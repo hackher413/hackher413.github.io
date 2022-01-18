@@ -561,6 +561,25 @@ input[type=text]:focus, input[type=email]:focus {
   opacity: 1;
 }
 
+/* CFP */
+.cfp-section{
+  display: block;
+  text-align:center;
+  background-color: #738e6d;
+  padding: 20px;
+  border-bottom: 6px solid #738e6d;
+}
+
+.cfp-section p{
+  font-size: 1.3em;
+}
+
+.hackher413-cfp-logo{
+  max-width: 300px;
+    max-height: 250px;
+    padding: 20px;
+}
+
 /* Sponsor */
 .sponsor-section{
   display: block;
