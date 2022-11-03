@@ -16,7 +16,7 @@ h1, h2{
 }
 
 a{
-  color: #4F7344;
+  color: #FF809E;
 }
 
 a:hover{
@@ -29,7 +29,7 @@ a.icon-nav{
 }
 
 a.icon-nav:hover{
-  color: #ABDD9E;
+  color: #FFC9DE;
 }
 
 #mlh-trust-badge{
@@ -103,7 +103,7 @@ a.icon-nav:hover{
   height:400px;
   margin: 0;
   padding: 0;
-  background-color: #ABDD9E;
+  background-color: #FFC9DE;
 }
 
 
@@ -131,7 +131,7 @@ a.icon-nav:hover{
   font-family: 'News Cycle';
   font-weight:900;
   letter-spacing: 0.045em;
-  background-color: #ABDD9E;
+  background-color: #FFC9DE;
   border: 2px solid #fff;
 }
 
@@ -150,21 +150,21 @@ a.icon-nav:hover{
 
 .btn-primary:focus,
 .btn-primary.focus {
-  box-shadow: 0 0 0 .2rem rgba(91, 194, 194, 0.5)
+  box-shadow: 0 0 0 .2rem #FF90CF
 }
 
 .btn-primary.disabled,
 .btn-primary:disabled {
   color: #212529;
-  background-color: #7cc;
-  border-color: #5bc2c2
+  background-color: #FF90CF;
+  border-color: #FF90CF
 }
 
 .btn-primary:not(:disabled):not(.disabled):active,
 .btn-primary:not(:disabled):not(.disabled).active,
 .show>.btn-primary.dropdown-toggle {
   color: #212529;
-  background-color: #9cdada;
+  background-color: #FF90CF;
   border-color: #2e7c7c
 }
 
@@ -202,8 +202,8 @@ a.icon-nav:hover{
 .btn-outline-primary:not(:disabled):not(.disabled).active,
 .show>.btn-outline-primary.dropdown-toggle {
   color: #212529;
-  background-color: #8ad3d3;
-  border-color: #7cc
+  background-color: #FF90CF;
+  border-color: #FF90CF
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus,
@@ -246,7 +246,7 @@ input[type=text]:focus, input[type=email]:focus {
 
 /* Modal Content */
 .modal-content {
-  background-color: #ABDD9E;
+  background-color: #FFC9DE;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
@@ -289,7 +289,7 @@ input[type=text]:focus, input[type=email]:focus {
 
 .about-heading{
   font-size: 2em;
-  color: #40744C;
+  color: #FF90CF;
   text-align: center;
   font-family: 'News Cycle';
 }
@@ -316,7 +316,7 @@ input[type=text]:focus, input[type=email]:focus {
 
 .hopper-heading{
   font-size: 2em;
-  color: #40744C;
+  color: #744063;
   text-align: center;
   font-family: 'News Cycle';
 }
@@ -368,12 +368,12 @@ input[type=text]:focus, input[type=email]:focus {
   text-align: center;
   font-family: 'News Cycle';
   font-size: 1.2em;
-  color: #56b8b8;
+  color: #FF5DB4;
 }
 
 /* LIGHT GREEN BG */
 .greenbg{
-  background-color: #738e6d;
+  background-color: #b88ca2;
   padding: 5%;
   display: inline-block;
 }
@@ -397,7 +397,7 @@ input[type=text]:focus, input[type=email]:focus {
   text-align: center;
   font-family: 'News Cycle';
   font-size: 1.2em;
-  color: #56b8b8;
+  color: #FF5DB4;
 }
 
 /* GREY BG */
@@ -431,7 +431,7 @@ input[type=text]:focus, input[type=email]:focus {
 
 /* Dark Section Speaker */
 .darkbg{
-  background: linear-gradient(#4F7344, #90c97d);
+  background: linear-gradient(#FF809E, #FF90CF);
   padding: 5%;
   display: inline-block;
 }
@@ -540,7 +540,7 @@ input[type=text]:focus, input[type=email]:focus {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: #688D5C;
+  background: #FF5DB4;
   -webkit-transition: opacity 0.25s ease;
   transition: opacity 0.25s ease;
   text-align: center;
@@ -589,7 +589,7 @@ input[type=text]:focus, input[type=email]:focus {
 .blockquote:after {
     position: absolute;
     content: "”";
-    color: #ABDD9E;
+    color: #FFC9DE;
     font-size: 20em;
     line-height: 1;
     left: calc(50% - 3rem);
@@ -607,7 +607,7 @@ input[type=text]:focus, input[type=email]:focus {
     height: 100%;
     z-index: -1;
    background-color: #F9FFED;
-    background-image: linear-gradient(45deg, #F9FFED 0%, #F9FFED 24%, #688D5C 49%, #F9FFED 75%, white 100%);
+    background-image: linear-gradient(45deg, #F9FFED 0%, #F9FFED 24%, #FF5DB4 49%, #F9FFED 75%, white 100%);
 
     background-size: 400% 400%;
     animation: gradientborders 8s ease infinite;
@@ -643,7 +643,7 @@ input[type=text]:focus, input[type=email]:focus {
 /* Blockquote subheader */
 .blockquote h4 {
     position: relative;
-    color: #FF058A;
+    color: #FF809E;
     background-color: white;
     text-transform: uppercase;
     font-size: 1rem;
@@ -660,9 +660,9 @@ input[type=text]:focus, input[type=email]:focus {
 .cfp-section{
   display: block;
   text-align:center;
-  background-color: #738e6d;
+  background-color: #FFC9DE;
   padding: 20px;
-  border-bottom: 6px solid #738e6d;
+  border-bottom: 6px solid #FFC9DE;
 }
 
 .cfp-section p{
@@ -790,7 +790,7 @@ input[type=text]:focus, input[type=email]:focus {
     width: 400px;
   }
   .vl{
-    border-left: 3px dashed #ABDD9E;
+    border-left: 3px dashed #FFC9DE;
   }
   .coming-soon{
     padding-top: 20%;
@@ -812,7 +812,7 @@ input[type=text]:focus, input[type=email]:focus {
   }
   
   .vl{
-    border-left: 3px dashed #ABDD9E;
+    border-left: 3px dashed #FFC9DE;
   }
   .coming-soon{
     padding-top: 20%;
@@ -858,7 +858,7 @@ input[type=text]:focus, input[type=email]:focus {
       line-height: 60px; }
   .feature_item h4 {
   	text-align: center;
-    color: #4F7344;
+    color: #FF809E;
     font-size: 19px;
     font-family: "Heebo", sans-serif;
     font-weight: bold;
@@ -874,7 +874,7 @@ input[type=text]:focus, input[type=email]:focus {
     box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.08);
     border-color: #fff; }
     .feature_item:hover i:before {
-      background: linear-gradient(to right, #4F7344 0%, #688D5C 70%);
+      background: linear-gradient(to right, #FF809E 0%, #8d5c7c 70%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
 
@@ -945,7 +945,7 @@ input[type=text]:focus, input[type=email]:focus {
   border-radius: 5px; }
   .wel_item i {
     font-size: 24px;
-    background: linear-gradient(to right, #4F7344 0%, #688D5C 70%);
+    background: linear-gradient(to right, #FF809E 0%, #8d5c74 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
   .wel_item h4 {
@@ -994,9 +994,9 @@ input[type=text]:focus, input[type=email]:focus {
         border-radius: 5px;
         vertical-align: middle;
         align-self: center;
-        background-image: -moz-linear-gradient(0deg, #4F7344 0%, #688D5C 100%);
-        background-image: -webkit-linear-gradient(0deg, #4F7344 0%, #688D5C 100%);
-        background-image: -ms-linear-gradient(0deg, #4F7344 0%, #688D5C 100%); }
+        background-image: -moz-linear-gradient(0deg, #FF809E 0%, #FFC9DE 100%);
+        background-image: -webkit-linear-gradient(0deg, #FF809E 0%, #FFC9DE 100%);
+        background-image: -ms-linear-gradient(0deg, #FF809E 0%, #FFC9DE 100%); }
 
 /* End Welcome Area css
 ============================================================================================ */
@@ -1004,7 +1004,7 @@ input[type=text]:focus, input[type=email]:focus {
 #venue-section{
   display: block;
   text-align:center;
-  background: linear-gradient(#90c97d, #4F7344);
+  background: linear-gradient(#90c97d, #FF809E);
   padding: 20px;
   padding-top: 35px;
   border-bottom: 6px solid #E6F4F4;
@@ -1028,7 +1028,7 @@ input[type=text]:focus, input[type=email]:focus {
 
   /* Last Year's Event  */
   .last-year{
-    background-color: #4F7344;
+    background-color: #FF809E;
     padding: 3% 0;
   }
 
@@ -1047,11 +1047,11 @@ input[type=text]:focus, input[type=email]:focus {
   }
 
   .highlight{
-  background: linear-gradient(180deg,rgba(255,255,255,0) 60%, #4F7344 40%);
+  background: linear-gradient(180deg,rgba(255,255,255,0) 60%, #FF809E 40%);
   }
 
   .highlight:hover {
-  background: linear-gradient(180deg,rgba(255,255,255,0) 80%, #4F7344 40%);
+  background: linear-gradient(180deg,rgba(255,255,255,0) 80%, #FF809E 40%);
   }
 
   .last-year-link{
@@ -1099,8 +1099,8 @@ input[type=text]:focus, input[type=email]:focus {
 
 .apply-btns {
     text-align: center;
-    background-color: #688D5C;
-    border: 1px solid #688D5C;
+    background-color: #FFC9DE;
+    border: 1px solid #FFC9DE;
     color: #fff;
     font-size: 1.3em;
     padding: 5px;
@@ -1112,7 +1112,7 @@ input[type=text]:focus, input[type=email]:focus {
 
 /* Tracks */
 .tracks{
-  background-color: #4F7344;
+  background-color: #FF809E;
   padding: 3% 0;
 }
 
@@ -1153,7 +1153,7 @@ input[type=text]:focus, input[type=email]:focus {
 /* FAQ Section */
 
 #faq{
-  background-color: #4F7344;
+  background-color: #FF809E;
   padding: 20px;
 }
 
@@ -1219,7 +1219,7 @@ input[type=text]:focus, input[type=email]:focus {
   height: 25px;
   right: -17px;
   background-color: white;
-  border: 4px solid #688D5C;
+  border: 4px solid #FFC9DE;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -1360,7 +1360,7 @@ input[type=text]:focus, input[type=email]:focus {
 
 }
 .events-detail li:hover {
-  background: #4F7344;
+  background: #FF809E;
 }
 .event-time {
   font-weight: 900;
@@ -1378,7 +1378,7 @@ input[type=text]:focus, input[type=email]:focus {
 }
 .event-location {
   font-size: 0.8em;
-  color: #4F7344;
+  color: #FF809E;
   margin-left: 70px;
 }
 @media all and (max-width: 641px) {

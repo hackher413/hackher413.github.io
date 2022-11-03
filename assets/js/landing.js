@@ -122,7 +122,7 @@ var RENDERER = {
 	render : function(){
 		requestAnimationFrame(this.render);
 
-		this.context.fillStyle = 'hsla(26, 98.4%, 76.1%, 0.3)';
+		this.context.fillStyle = 'hsla(26, 333%, 76.1%, 0.3)';
 		this.context.fillRect(0, 0, this.width, this.height);
 
 		for(var i = 0, count = this.hexagons.length; i < count; i++){
@@ -177,9 +177,9 @@ HEXAGON.prototype = {
 			}else if(target.count < this.COUNT.MAX * 2){
 				strokeLuminance = this.LUMINANCE.MIN + (this.LUMINANCE.MAX - this.LUMINANCE.MIN) * Math.sin(Math.PI / 2 * (1 + (target.count - this.COUNT.MIN * 2) / (this.COUNT.MAX - this.COUNT.MIN) / 2));
 			}
-			context.fillStyle = 'hsla(' + target.hue + ', 70%, ' + fillLuminance + '%, 0.3)';
+			context.fillStyle = 'hsla(' + target.hue + ', 333%, ' + fillLuminance + '%, 0.3)';
 			context.fill();
-			context.strokeStyle = 'hsla(' + target.hue + ', 70%, ' + strokeLuminance + '%, 0.3)';
+			context.strokeStyle = 'hsla(' + target.hue + ', 333%, ' + strokeLuminance + '%, 0.3)';
 			context.stroke();
 		}
 	},
@@ -193,7 +193,7 @@ HEXAGON.prototype = {
 			context[i == 0 ? 'moveTo' : 'lineTo'](vertices[i].x, vertices[i].y);
 		}
 		context.closePath();
-		context.fillStyle = 'hsla(210, 70%, ' + this.LUMINANCE.MIN + '%, 0.3)';
+		context.fillStyle = 'hsla(210, 333%, ' + this.LUMINANCE.MIN + '%, 0.3)';
 		context.fill();
 
 		this.draw(context, this.selections);
