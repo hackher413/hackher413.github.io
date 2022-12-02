@@ -181,6 +181,17 @@ a.icon-nav:hover{
   border-color: white
 }
 
+#textshadow 
+{     
+  color: white;
+  text-shadow:
+   -1px 0px 0 #ffffff,  
+    0px 0px 0 #ffffff,
+    -1px 1px 0 #ffffff,
+     0px 1px 0 #ffffff;
+}
+
+
 .btn-outline-primary:hover {
   color: #222;
   background-color: white;
