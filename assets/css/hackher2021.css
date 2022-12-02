@@ -81,6 +81,16 @@ a.icon-nav:hover{
           transform: rotate(-60deg);
   }
 
+#textshadow 
+{     
+  color: white;
+  text-shadow:
+   -1px 1px 0 #ffffff,  
+    0px 1px 0 #ffffff,
+    -1px 0px 0 #ffffff,
+     0px 0px 0 #ffffff;
+}
+
 .hexagon1 {
   width: 400px;
   height: 200px;
