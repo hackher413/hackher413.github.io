@@ -118,7 +118,7 @@ a.icon-nav:hover{
 
 .button {
   position: absolute;
-  top: 85%;
+  top: 95%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 277px;
@@ -131,20 +131,22 @@ a.icon-nav:hover{
   font-family: 'News Cycle';
   font-weight:900;
   letter-spacing: 0.045em;
-  background-color: #FFC9DE;
+  background-color: #eca2c7;
   border: 2px solid #fff;
 }
 
 
 .btn-primary {
+  width: 350px;
   color: #212529;
-  background-color: white;
+  background-color: rgb(248, 210, 239);
   border-color: white
+
 }
 
 .btn-primary:hover {
   color: #212529;
-  background-color: lightgray;
+  background-color: rgb(207, 194, 194);
   border-color: white
 }
 
@@ -175,7 +177,7 @@ a.icon-nav:hover{
 }
 
 .btn-outline-primary {
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: transparent;
   background-image: none;
   border-color: white
@@ -201,7 +203,7 @@ a.icon-nav:hover{
 
 .btn-outline-primary:focus,
 .btn-outline-primary.focus {
-  box-shadow: 0 0 0 .2rem rgba(119, 204, 204, 0.5)
+  box-shadow: 0 0 0 .2rem rgba(204, 119, 201, 0.5)
 }
 
 .btn-outline-primary.disabled,
@@ -223,6 +225,96 @@ a.icon-nav:hover{
 .show>.btn-outline-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 .2rem rgba(119, 204, 204, 0.5)
 }
+.btn-secondary {
+  width: 250px;
+  color: #212529;
+  background-color: white;
+  border-color: white
+
+}
+
+.btn-secondary:hover {
+  color: #212529;
+  background-color: rgb(207, 194, 194);
+  border-color: white
+}
+
+.btn-secondary:focus,
+.btn-secondary.focus {
+  box-shadow: 0 0 0 .2rem #FF90CF
+}
+
+.btn-secondary.disabled,
+.btn-secondary:disabled {
+  color: #212529;
+  background-color: #FF90CF;
+  border-color: #FF90CF
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active,
+.btn-secondary:not(:disabled):not(.disabled).active,
+.show>.btn-secondary.dropdown-toggle {
+  color: #212529;
+  background-color: #FF90CF;
+  border-color: #2e7c7c
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.btn-secondary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .2rem rgba(91, 194, 194, 0.5)
+}
+
+.btn-outline-secondary {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  background-image: none;
+  border-color: white
+}
+
+
+#textshadow 
+{     
+  color: white;
+  text-shadow:
+   -1px 1px 0 #ffffff,  
+    0px 1px 0 #ffffff,
+    -1px 0px 0 #ffffff,
+     0px 0px 0 #ffffff;
+}
+
+
+.btn-outline-secondary:hover {
+  color: #222;
+  background-color: white;
+  border-color: white
+}
+
+.btn-outline-secondary:focus,
+.btn-outline-secondary.focus {
+  box-shadow: 0 0 0 .2rem rgba(204, 119, 201, 0.5)
+}
+
+.btn-outline-secondary.disabled,
+.btn-outline-secondary:disabled {
+  color: #7cc;
+  background-color: transparent
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled):active,
+.btn-outline-secondary:not(:disabled):not(.disabled).active,
+.show>.btn-outline-secondary.dropdown-toggle {
+  color: #212529;
+  background-color: #FF90CF;
+  border-color: #FF90CF
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
+.btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-outline-prisecondarymary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .2rem rgba(119, 204, 204, 0.5)
+}
+
 
 /* Email Sign-Up Modal */
 /* Full-width input fields */
