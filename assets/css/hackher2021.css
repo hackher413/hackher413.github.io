@@ -147,8 +147,12 @@ a.icon-nav:hover{
 
 
 .btn-primary {
+<<<<<<< HEAD
 
   width: 150px;
+=======
+  width: 199px;
+>>>>>>> 15e7de87af5d0f81400ee4b4a1b7995c4ca0a078
   color: #212529;
   background-color: rgb(248, 210, 239);
   border-color: white
