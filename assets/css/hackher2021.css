@@ -85,10 +85,10 @@ a.icon-nav:hover{
 {     
   color: white;
   text-shadow:
-   -1px 1px 0 #ffffff,  
-    0px 1px 0 #ffffff,
-    -1px 0px 0 #ffffff,
-     0px 0px 0 #ffffff;
+   -1px 1px 0 #050000,  
+    0px 1px 0 #000000,
+    -1px 0px 0 #000000,
+     0px 0px 0 #000000;
 }
 
 .hexagon1 {
@@ -147,12 +147,8 @@ a.icon-nav:hover{
 
 
 .btn-primary {
-<<<<<<< HEAD
 
   width: 150px;
-=======
-  width: 199px;
->>>>>>> 15e7de87af5d0f81400ee4b4a1b7995c4ca0a078
   color: #212529;
   background-color: rgb(248, 210, 239);
   border-color: white
@@ -203,10 +199,10 @@ a.icon-nav:hover{
 {     
   color: white;
   text-shadow:
-   -1px 1px 0 #ffffff,  
-    0px 1px 0 #ffffff,
-    -1px 0px 0 #ffffff,
-     0px 0px 0 #ffffff;
+   -1px 1px 0 #000000,  
+    0px 1px 0 #000000,
+    -1px 0px 0 #000000,
+     0px 0px 0 #000000;
 }
 
 
@@ -296,6 +292,15 @@ a.icon-nav:hover{
     0px 1px 0 #ffffff,
     -1px 0px 0 #ffffff,
      0px 0px 0 #ffffff;
+}
+#textshadow2 
+{     
+  color: white;
+  text-shadow:
+   -1px 1px 0 #000000,  
+    0px 1px 0 #000000,
+    -1px 0px 0 #000000,
+     0px 0px 0 #000000;
 }
 
 
