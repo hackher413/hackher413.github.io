@@ -5,7 +5,7 @@ var hexagon_color = '#366189';
 var hexagon_line_width = 2;
 
 var changing_colors = true;
-var changing_solors_speed = 0.1;
+var changing_colors_speed = 0.1;
 
 var fancy_graphics = false;
 
@@ -67,20 +67,20 @@ function loop() {
 		if(changing_colors) {
 			ctx.shadowColor = ctx.strokeStyle = 'hsl(' + h + ', 100%, 50%)';
 			if(h<230 && decreasing_flag==false){
-				h+=changing_solors_speed;
+				h+=changing_colors_speed;
 
 			}
 			else if (h>=230 && decreasing_flag==false){
 				decreasing_flag = true;
-				h-=changing_solors_speed;
+				h-=changing_colors_speed;
 			}
 			else if(h>175 && decreasing_flag==true){
-				h-=changing_solors_speed;
+				h-=changing_colors_speed;
 
 			}
 			else if(h<=175 && decreasing_flag == true){
 				decreasing_flag = false;
-				//h+=changing_solors_speed;
+				//h+=changing_colors_speed;
 			};
 		}else
 			ctx.shadowColor = ctx.strokeStyle = hexagon_color;
@@ -102,7 +102,7 @@ function loop() {
 		}
 		
 		if(changing_colors)
-			h += changing_solors_speed;
+			h += changing_colors_speed;
 		
 	}
 	
