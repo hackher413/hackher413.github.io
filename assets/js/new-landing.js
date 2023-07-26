@@ -1,10 +1,10 @@
 var hexagon_radius = 45;
 var hexagon_max_absolute_speed = 0.05;
 var hexagon_space_between = 1;
-var hexagon_color = '#FF809E';
+var hexagon_color = '#366189';
 var hexagon_line_width = 2;
 
-var changing_colors = false;
+var changing_colors = true;
 var changing_solors_speed = 0.1;
 
 var fancy_graphics = false;
@@ -15,7 +15,9 @@ var hexagons = [];
 
 var s3p3 = Math.sqrt(3);
 
-var h = 0;
+var h = 175;
+
+var decreasing_flag = false;
 
 function init() {
 	
@@ -64,7 +66,22 @@ function loop() {
 		}
 		if(changing_colors) {
 			ctx.shadowColor = ctx.strokeStyle = 'hsl(' + h + ', 100%, 50%)';
-			h += changing_solors_speed;
+			if(h<230 && decreasing_flag==false){
+				h+=changing_solors_speed;
+
+			}
+			else if (h>=230 && decreasing_flag==false){
+				decreasing_flag = true;
+				h-=changing_solors_speed;
+			}
+			else if(h>175 && decreasing_flag==true){
+				h-=changing_solors_speed;
+
+			}
+			else if(h<=175 && decreasing_flag == true){
+				decreasing_flag = false;
+				//h+=changing_solors_speed;
+			};
 		}else
 			ctx.shadowColor = ctx.strokeStyle = hexagon_color;
 		ctx.shadowBlur = 20;
