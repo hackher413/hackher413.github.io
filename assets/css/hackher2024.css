@@ -588,6 +588,12 @@ input[type=text]:focus, input[type=email]:focus {
   font-family: 'News Cycle';
   text-align: center;
 }
+.lightbg-heading2{
+  font-size: 2.3em;
+  color: #174a9a;
+  font-family: 'News Cycle';
+  text-align: center;
+}
 
 .lightbg-para{
   padding-top: 10px;
@@ -627,6 +633,15 @@ input[type=text]:focus, input[type=email]:focus {
     display: block;
     margin-left: auto;
     margin-right: auto
+}
+
+.img-sq {
+  filter: drop-shadow(0 0 0.25rem #366189);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px
 }
 
 .workshop-img{
