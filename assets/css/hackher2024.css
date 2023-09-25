@@ -868,6 +868,8 @@ input[type=text]:focus, input[type=email]:focus {
 
 #lab_social_icon_footer .social {
   -webkit-transform: scale(0.8);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
   /* Browser Variations: */
 
   -moz-transform: scale(0.8);
