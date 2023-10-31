@@ -23,7 +23,7 @@ function init() {
 	
 	canvas = document.getElementById('new');
 	canvas.width = window.innerWidth;
-	canvas.height = window.innerHeight/2;
+	canvas.height = window.innerHeight;
 	canvas.style.width = canvas.width + 'px';
 	canvas.style.height = canvas.height + 'px';
 	ctx = canvas.getContext('2d');
