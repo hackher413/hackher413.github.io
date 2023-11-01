@@ -212,10 +212,10 @@ a.icon-nav:hover{
 
 
 .Btn {
-  width: 150px;
+  width: 250px;
   height: 60px;
   border: none;
-  left: 35%;
+  left: 24%;
   border-radius: 10px;
   background: linear-gradient(to right,#1F51FF,#89CFF0,#1F51FF,#7DF9FF,#7DF9FF,#F0FFFF);
   background-size: 250%;
