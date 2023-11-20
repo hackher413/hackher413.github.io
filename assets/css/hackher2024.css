@@ -6,6 +6,7 @@ html{
 }
 body{
   font-family: "News Cycle", sans-serif;
+  overflow-x: hidden;
 }
 
 h1, h2{
@@ -660,6 +661,14 @@ input[type=text]:focus, input[type=email]:focus {
   text-align: center;
 }
 
+.lightbg-heading3{
+  font-size: 2em;
+  color: #383d45;
+  font-family: 'News Cycle';
+  text-align: left;
+  transform: translateX(50%);
+}
+
 .lightbg-para{
   padding-top: 10px;
   font-family: 'News Cycle';
@@ -893,6 +902,13 @@ input[type=text]:focus, input[type=email]:focus {
 
 .sponsor-section p{
   font-size: 1.3em;
+}
+
+.center-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*height: 100vh;*/ /* 100% of the viewport height */
 }
 
 .hackher413-sponsor-logo{
