@@ -1411,7 +1411,7 @@ input[type=text]:focus, input[type=email]:focus {
   padding: 25px 20px;
   border-radius: 10px;
   transition: all 300ms linear 0s;
-  background: #fff;
+  background: #ffffff;
   margin-bottom: 30px; }
   .feature_item i {
     margin-bottom: 35px;
@@ -1419,7 +1419,7 @@ input[type=text]:focus, input[type=email]:focus {
     .feature_item i:before {
       margin-left: 0px;
       font-size: 60px;
-      color: #e1e1e1;
+      color: #ffffff;
       line-height: 60px; }
   .feature_item h4 {
   	text-align: center;
@@ -1718,9 +1718,18 @@ input[type=text]:focus, input[type=email]:focus {
 
 /* FAQ Section */
 
+.row2 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -80px;
+  margin-left: -80px;
+}
+
 #faq{
   background-color: #366189;
-  padding: 20px;
+  padding: 95px;
 }
 
 .faq-heading{
@@ -1729,6 +1738,9 @@ input[type=text]:focus, input[type=email]:focus {
 
 .faq-tile{
   text-align: center;
+  /* padding-left: 50px;
+  margin-left: 10px; */
+  width: 80%;
   margin: 10px auto;
 }
 
