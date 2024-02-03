@@ -1078,8 +1078,9 @@ input[type=text]:focus, input[type=email]:focus {
 #hexGrid {
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
+  margin-left: 3%;
   overflow: hidden;
   font-family: 'Raleway', sans-serif;
   font-size: 15px;
@@ -1201,7 +1202,21 @@ input[type=text]:focus, input[type=email]:focus {
 }
 
 /*** HEXAGON SIZING AND EVEN ROW INDENTATION *****************************************************************/
-@media (min-width:1201px) { /* <- 5-4  hexagons per row */
+
+/* Styles for 6-5 hexagons per row */
+@media (min-width: 1401px) {
+  #hexGrid {
+    padding-bottom: 3.6%;
+  }
+  .hex {
+    width: calc(16.666% - 2.4%);
+  }
+  .hex:nth-child(11n+1) {
+    margin-left: 4.8%;
+  }
+}
+
+@media (max-width: 1400px) and (min-width:1201px) { /* <- 5-4  hexagons per row */
   #hexGrid{
     padding-bottom: 4.4%
   }
@@ -1211,6 +1226,17 @@ input[type=text]:focus, input[type=email]:focus {
   .hex:nth-child(9n+6){ /* first hexagon of even rows */
     margin-left:10%;  /* = width of .hex / 2  to indent even rows */
   }
+
+   /* Styles for 6-5 hexagons per row
+   #hexGrid {
+    padding-bottom: 3.6%;
+  }
+  .hex {
+    width: calc(16.666% - 2.4%);
+  }
+  .hex:nth-child(11n+6) {
+    margin-left: 4.8%;
+  } */
 }
 
 @media (max-width: 1200px) and (min-width:901px) { /* <- 4-3  hexagons per row */
