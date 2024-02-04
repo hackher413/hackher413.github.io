@@ -1204,7 +1204,7 @@ input[type=text]:focus, input[type=email]:focus {
 /*** HEXAGON SIZING AND EVEN ROW INDENTATION *****************************************************************/
 
 /* Styles for 6-5 hexagons per row */
-@media (min-width: 1401px) {
+/* @media (min-width: 1401px) {
   #hexGrid {
     padding-bottom: 3.6%;
   }
@@ -1214,9 +1214,9 @@ input[type=text]:focus, input[type=email]:focus {
   .hex:nth-child(11n+1) {
     margin-left: 4.8%;
   }
-}
+} */
 
-@media (max-width: 1400px) and (min-width:1201px) { /* <- 5-4  hexagons per row */
+@media  (min-width:1201px) { /* <- 5-4  hexagons per row */
   #hexGrid{
     padding-bottom: 4.4%
   }
