@@ -4,7 +4,7 @@ var hexagon_space_between = 1;
 var hexagon_color = '#366189';
 var hexagon_line_width = 2;
 
-var changing_colors = true;
+var changing_colors = false;
 var changing_colors_speed = 0.1;
 
 var fancy_graphics = false;
