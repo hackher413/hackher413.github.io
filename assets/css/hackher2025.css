@@ -186,22 +186,22 @@ html{
   .btn-primary.disabled,
   .btn-primary:disabled {
     color: #212529;
-    background-color: #b5838d;
-    border-color: #b98c95
+    background-color: #45A49B;
+    border-color: #45A49B
   }
   
   .btn-primary:not(:disabled):not(.disabled):active,
   .btn-primary:not(:disabled):not(.disabled).active,
   .show>.btn-primary.dropdown-toggle {
     color: #212529;
-    background-color: #b5838d;
-    border-color: #dbc3d3
+    background-color: #366189;
+    border-color: #2e7c7c
   }
   
   .btn-primary:not(:disabled):not(.disabled):active:focus,
   .btn-primary:not(:disabled):not(.disabled).active:focus,
   .show>.btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 .2rem hwb(307 40% 22% / 0.5)
+    box-shadow: 0 0 0 .2rem rgba(91, 194, 194, 0.5)
   }
   
   .btn-outline-primary {
@@ -218,10 +218,10 @@ html{
     border: none;
     /* left: 24%; */
     border-radius: 10px;
-    background: linear-gradient(to right, #bf8490,#e37fc1,#bf8490,#d096ba,#d096ba,#F0FFFF);
+    background: linear-gradient(to right,#1F51FF,#89CFF0,#1F51FF,#7DF9FF,#7DF9FF,#F0FFFF);
     background-size: 250%;
     background-position: left;
-    color: #c4ddca;
+    color: #ffd277;
     position: relative;
     display: flex;
     align-items: center;
@@ -234,7 +234,7 @@ html{
   .Btn::before {
     position: absolute;
     content: "Check out this year's photos!";
-    color: #dbc3d3;
+    color: #B6D0E2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -267,7 +267,7 @@ html{
     border: none;
     /* left: 24%; */
     border-radius: 10px;
-    background: linear-gradient(to right,#bf8490,#e37fc1,#bf8490,#d096ba,#d096ba,#F0FFFF);
+    background: linear-gradient(to right,#1F51FF,#89CFF0,#1F51FF,#7DF9FF,#7DF9FF,#F0FFFF);
     background-size: 250%;
     background-position: left;
     color: #fcfcfc;
@@ -284,7 +284,7 @@ html{
   .Vol::after {
     position: absolute;
     content: "Volunteer Applications";
-    color: #e2b6de; 
+    color: #B6D0E2; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -318,10 +318,10 @@ html{
     border: none;
     /* left: 24%; */
     border-radius: 10px;
-    background: linear-gradient(to right,#bf8490,#e37fc1,#bf8490,#d096ba,#d096ba,#F0FFFF);
+    background: linear-gradient(to right,#1F51FF,#89CFF0,#1F51FF,#7DF9FF,#7DF9FF,#F0FFFF);
     background-size: 250%;
     background-position: left;
-    color: #c4ddca;
+    color: #ffd277;
     position: relative;
     display: flex;
     align-items: center;
@@ -334,7 +334,7 @@ html{
   .Mentor::before {
     position: absolute;
     content: "Be a Mentor";
-    color: #e2b6de;
+    color: #B6D0E2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -368,10 +368,10 @@ html{
     border: none;
     /* left: 24%; */
     border-radius: 10px;
-    background: linear-gradient(to right,#bf8490,#e37fc1,#bf8490,#d096ba,#d096ba,#F0FFFF);
+    background: linear-gradient(to right,#1F51FF,#89CFF0,#1F51FF,#7DF9FF,#7DF9FF,#F0FFFF);
     background-size: 250%;
     background-position: left;
-    color: #c4ddca;
+    color: #ffd277;
     position: relative;
     display: flex;
     align-items: center;
@@ -384,7 +384,7 @@ html{
   .Mail::before {
     position: absolute;
     content: "Subscribe to our Mailing List";
-    color: #e2b6de;
+    color: #B6D0E2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -430,12 +430,12 @@ html{
   
   .btn-outline-primary:focus,
   .btn-outline-primary.focus {
-    box-shadow: 0 0 0 .2rem #b2d6c8;
+    box-shadow: 0 0 0 .2rem #D19739;
   }
   
   .btn-outline-primary.disabled,
   .btn-outline-primary:disabled {
-    color: rgb(164, 219, 202);
+    color: #7cc;
     background-color: transparent
   }
   
@@ -443,14 +443,14 @@ html{
   .btn-outline-primary:not(:disabled):not(.disabled).active,
   .show>.btn-outline-primary.dropdown-toggle {
     color: #212529;
-    background-color: #b5838d;
-    border-color: #b5838d
+    background-color: #366189;
+    border-color: #366189
   }
   
   .btn-outline-primary:not(:disabled):not(.disabled):active:focus,
   .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
   .show>.btn-outline-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 .2rem rgba(205, 156, 202, 0.5)
+    box-shadow: 0 0 0 .2rem rgba(119, 204, 204, 0.5)
   }
   .btn-secondary {
     width: 248px;
@@ -462,34 +462,34 @@ html{
   
   .btn-secondary:hover {
     color: #212529;
-    background-color: rgb(206, 194, 207);
+    background-color: rgb(207, 194, 194);
     border-color: white
   }
   
   .btn-secondary:focus,
   .btn-secondary.focus {
-    box-shadow: 0 0 0 .2rem #b5838d
+    box-shadow: 0 0 0 .2rem #366189
   }
   
   .btn-secondary.disabled,
   .btn-secondary:disabled {
     color: #212529;
-    background-color: #b5838d;
-    border-color: #b5838d
+    background-color: #366189;
+    border-color: #366189
   }
   
   .btn-secondary:not(:disabled):not(.disabled):active,
   .btn-secondary:not(:disabled):not(.disabled).active,
   .show>.btn-secondary.dropdown-toggle {
     color: #212529;
-    background-color: #b5838d;
-    border-color: #c17c89
+    background-color: #366189;
+    border-color: #2e7c7c
   }
   
   .btn-secondary:not(:disabled):not(.disabled):active:focus,
   .btn-secondary:not(:disabled):not(.disabled).active:focus,
   .show>.btn-secondary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 .2rem rgba(205, 156, 202, 0.5)
+    box-shadow: 0 0 0 .2rem rgba(91, 194, 194, 0.5)
   }
   
   .btn-outline-secondary {
@@ -528,7 +528,7 @@ html{
   
   .btn-outline-secondary:focus,
   .btn-outline-secondary.focus {
-    box-shadow: 0 0 0 .2rem rgba(205, 156, 202, 0.5)
+    box-shadow: 0 0 0 .2rem rgba(204, 119, 201, 0.5)
   }
   
   .btn-outline-secondary.disabled,
@@ -541,14 +541,14 @@ html{
   .btn-outline-secondary:not(:disabled):not(.disabled).active,
   .show>.btn-outline-secondary.dropdown-toggle {
     color: #212529;
-    background-color: #b5838d;
-    border-color: #b5838d
+    background-color: #366189;
+    border-color: #366189
   }
   
   .btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
   .btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
   .show>.btn-outline-prisecondarymary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 .2rem rgba(205, 156, 202, 0.5)
+    box-shadow: 0 0 0 .2rem rgba(119, 204, 204, 0.5)
   }
   
   
@@ -1430,6 +1430,7 @@ html{
           font-size: 13px;
       }
   }
+  
   
   #lab_social_icon_footer a {
     color: #f0f0f0;
