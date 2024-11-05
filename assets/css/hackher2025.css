@@ -30,7 +30,7 @@ html{
   }
   
   a.icon-nav:hover{
-    color: #8ba9c6;
+    color: #e2b6de;
   }
   
   #mlh-trust-badge{
@@ -970,7 +970,7 @@ html{
       height: 100%;
       z-index: -1;
      background-color: #F9FFED;
-      background-image: linear-gradient(45deg, #F9FFED 0%, #F9FFED 24%, #45A49B 49%, #F9FFED 75%, white 100%);
+      background-image: linear-gradient(45deg, #F9FFED 0%, #F9FFED 24%, #b5838d 49%, #F9FFED 75%, white 100%);
   
       background-size: 400% 400%;
       animation: gradientborders 8s ease infinite;
