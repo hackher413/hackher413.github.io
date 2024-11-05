@@ -806,7 +806,7 @@ html{
   }
   .lightbg-heading2{
     font-size: 2.3em;
-    color: #ba6c7c;
+    color: #8d5c74;
     font-family: 'News Cycle';
     text-align: center;
   }
@@ -824,7 +824,7 @@ html{
     font-family: 'News Cycle';
     font-size: 1.2em;
     text-align: center;
-    color: #8d5c74;
+    color: white;
   }
   
   
@@ -1598,7 +1598,7 @@ html{
         line-height: 60px; }
     .feature_item h4 {
         text-align: center;
-      color: #ba6c7c;
+      color: black;
       font-size: 19px;
       font-family: "Heebo", sans-serif;
       font-weight: bold;
