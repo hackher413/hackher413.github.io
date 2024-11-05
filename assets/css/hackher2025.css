@@ -771,7 +771,7 @@ html{
   
   /* Dark Section Speaker */
   .darkbg{
-    background: linear-gradient(#b3878f, #ba6c7c);
+    background:#ba6c7c;
     padding: 5%;
     display: inline-block;
   }
