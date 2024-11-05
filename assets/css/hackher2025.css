@@ -1744,7 +1744,7 @@ html{
   #venue-section{
     display: block;
     text-align:center;
-    background: linear-gradient(#aad4bc, #ba6c7c);
+    background:#ba6c7c;
     padding: 20px;
     padding-top: 35px;
     border-bottom: 6px solid #E6F4F4;
