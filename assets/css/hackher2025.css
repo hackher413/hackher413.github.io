@@ -778,7 +778,7 @@ html{
   
   .darkbg-heading{
     font-size: 2em;
-    color: #fff;
+    color: white;
     font-family: 'News Cycle';
     text-align: center;
   }
@@ -788,7 +788,7 @@ html{
     font-family: 'News Cycle';
     font-size: 1.2em;
     text-align: center;
-    color: #ffffff;
+    color: white;
   }
   
   /* Light Blue Section */
