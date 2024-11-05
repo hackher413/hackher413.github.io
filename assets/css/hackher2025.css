@@ -174,20 +174,20 @@ html{
   
   .btn-primary:hover {
     color: #212529;
-    background-color: #d096ba;
-    border-color: #dbc3d3
+    background-color: #ba6c7c;
+    border-color: #ba6c7c
   }
   
   .btn-primary:focus,
   .btn-primary.focus {
-    box-shadow: 0 0 0 .2rem #dbc3d3
+    box-shadow: 0 0 0 .2rem #ba6c7c
   }
   
   .btn-primary.disabled,
   .btn-primary:disabled {
     color: #212529;
     background-color: #b5838d;
-    border-color: #dbc3d3
+    border-color: #ba6c7c
   }
   
   .btn-primary:not(:disabled):not(.disabled):active,
@@ -195,7 +195,7 @@ html{
   .show>.btn-primary.dropdown-toggle {
     color: #212529;
     background-color: #b5838d;
-    border-color: #dbc3d3
+    border-color: #ba6c7c
   }
   
   .btn-primary:not(:disabled):not(.disabled):active:focus,
@@ -218,7 +218,7 @@ html{
     border: none;
     /* left: 24%; */
     border-radius: 10px;
-    background: linear-gradient(to right, #bf8490,#e37fc1,#bf8490,#d096ba,#d096ba,#F0FFFF);
+    background: linear-gradient(to right, #bf8490,#e37fc1,#bf8490,#ba6c7c,#ba6c7c,#F0FFFF);
     background-size: 250%;
     background-position: left;
     color: #c4ddca;
@@ -234,7 +234,7 @@ html{
   .Btn::before {
     position: absolute;
     content: "Check out this year's photos!";
-    color: #dbc3d3;
+    color: #ba6c7c;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -267,7 +267,7 @@ html{
     border: none;
     /* left: 24%; */
     border-radius: 10px;
-    background: linear-gradient(to right,#bf8490,#e37fc1,#bf8490,#d096ba,#d096ba,#F0FFFF);
+    background: linear-gradient(to right,#bf8490,#e37fc1,#bf8490,#ba6c7c,#ba6c7c,#F0FFFF);
     background-size: 250%;
     background-position: left;
     color: #fcfcfc;
@@ -318,7 +318,7 @@ html{
     border: none;
     /* left: 24%; */
     border-radius: 10px;
-    background: linear-gradient(to right,#bf8490,#e37fc1,#bf8490,#d096ba,#d096ba,#F0FFFF);
+    background: linear-gradient(to right,#bf8490,#e37fc1,#bf8490,#ba6c7c,#ba6c7c,#F0FFFF);
     background-size: 250%;
     background-position: left;
     color: #c4ddca;
@@ -368,7 +368,7 @@ html{
     border: none;
     /* left: 24%; */
     border-radius: 10px;
-    background: linear-gradient(to right,#bf8490,#e37fc1,#bf8490,#d096ba,#d096ba,#F0FFFF);
+    background: linear-gradient(to right,#bf8490,#e37fc1,#bf8490,#ba6c7c,#ba6c7c,#F0FFFF);
     background-size: 250%;
     background-position: left;
     color: #c4ddca;
@@ -737,7 +737,7 @@ html{
     text-align: center;
     font-family: 'News Cycle';
     font-size: 1.2em;
-    color: #dbc3d3;
+    color: #ba6c7c;
   }
   
   /* GREY BG */
@@ -766,12 +766,12 @@ html{
     text-align: center;
     font-family: 'News Cycle';
     font-size: 1.2em;
-    color: #dbc3d3;
+    color: #ba6c7c;
   }
   
   /* Dark Section Speaker */
   .darkbg{
-    background: linear-gradient(#b3878f, #d096ba);
+    background: linear-gradient(#b3878f, #ba6c7c);
     padding: 5%;
     display: inline-block;
   }
@@ -793,7 +793,7 @@ html{
   
   /* Light Blue Section */
   .lightbg{
-    background-color: #dbc;
+    background-color: #ba6c7c;
     padding: 5%;
     /* display: inline-block; */
   }
@@ -806,7 +806,7 @@ html{
   }
   .lightbg-heading2{
     font-size: 2.3em;
-    color: #d096ba;
+    color: #ba6c7c;
     font-family: 'News Cycle';
     text-align: center;
   }
