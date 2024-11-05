@@ -773,7 +773,7 @@ html{
   .darkbg{
     background:#ba6c7c;
     padding: 5%;
-    display: inline-block;
+    /*display: inline-block;*/
   }
   
   .darkbg-heading{
