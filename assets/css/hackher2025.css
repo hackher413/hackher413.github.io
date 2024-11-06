@@ -234,7 +234,7 @@ html{
   .Btn::before {
     position: absolute;
     content: "Check out this year's photos!";
-    color: #ba6c7c;
+    color: #e2b6de;
     display: flex;
     align-items: center;
     justify-content: center;
