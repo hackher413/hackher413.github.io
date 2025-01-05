@@ -141,8 +141,59 @@ html{
     transform: translate(-50%, -50%);
   }
   
-  
-  
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 30%;
+    /* width: 10%; */
+    width: 200px;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+  }
+
+  .modal-content-popup {
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      background-color: #b5838d;
+      width: 35%;
+  }
+
+  .apply-popup {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #000;
+      color: #fff;
+      border: none;
+      width: 30%;
+      /* height: 90%; */
+      border-radius: 5px;
+      cursor: pointer;
+  }
+
+  .apply-popup-img {
+    width: 125px;
+    margin-top: -110px;
+    border-radius: 50%;
+  }
+
+  .close-btn {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #c4ddca78;
+      color: #000;
+      border: none;
+      width: 30%;
+      /* height: 90%; */
+      border-radius: 5px;
+      cursor: pointer;
+  }
+
   .button {
     position: absolute;
     top: 95%;
