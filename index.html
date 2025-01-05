@@ -50,6 +50,16 @@
         document.querySelector("body").style.overflow = "";
       }
     }
+
+    // Display the modal immediately on page load
+    window.onload = function() {
+      document.getElementById("modal").style.display = "flex";
+    };
+
+    // Close the modal
+    function closeModal() {
+      document.getElementById("modal").style.display = "none";
+    }
   </script>
 
 </head>
@@ -108,10 +118,33 @@
     </div>
   </nav>
 
+  <!-- pop up for applications -->
+  <!-- <div class = "popup">
+    <img src="assets\images\2025_logo\2025_bee.png" height="142px" width="142px">
+    <h2>Applications now OPEN!</h2>
+    <button type="button" class="applyButton">APPLY NOW</button>
+    <button type="button" class="cancelButton"></button>
+  </div> -->
+
+  <!-- testing code -->
+  <div id="modal" class="modal">
+    <div class="modal-content-popup" width="200px">
+      <div>
+        <img class="apply-popup-img" src="assets\images\2025_logo\2025_bee.png" height="142px" width="142px">
+      </div>
+        <h2>Applications now OPEN!</h2>
+        <p>Apply by January 18th to enter a raffle!</p>
+        <div>
+          <button class="apply-popup" onclick="window.location.href='https://dashboard.hackher413.com/';">APPLY NOW</button>
+        </div>
+        <div>
+          <button class="close-btn" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+  </div>
+
   <div class="landing">
     <div id="jsi-hex-container"></div>
-
-
 
     <div class="headings" id="textshadow">
       <div class="image-crop mx-auto">
@@ -1871,7 +1904,7 @@ s
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="assets\images\2025\team-members\hackher_pic - Anisha Sharda.jpg" width="100" height="100" alt="">
             <h4>Anisha Sharda</h4>
-            <p class="text-muted">Co-Director</p>
+            <p class="text-muted">Director</p>
             <p class="text-muted2">she/her</p>
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
