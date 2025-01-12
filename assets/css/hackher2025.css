@@ -233,7 +233,7 @@ html{
   
   .Btn::before {
     position: absolute;
-    content: "Check out this year's photos!";
+    content: "Check last this year's photos!";
     color: #dbc3d3;
     display: flex;
     align-items: center;
