@@ -50,6 +50,16 @@
         document.querySelector("body").style.overflow = "";
       }
     }
+
+    // Display the modal immediately on page load
+    window.onload = function() {
+      document.getElementById("modal").style.display = "flex";
+    };
+
+    // Close the modal
+    function closeModal() {
+      document.getElementById("modal").style.display = "none";
+    }
   </script>
 
 </head>
@@ -70,7 +80,7 @@
   <nav class="navbar fixed-top navbar-expand-lg custom-nav">
 
     <a class="navbar-brand" href="https://www.hackher413.com">
-      <img src="assets/images/2024/full_logo_cropped.png" width="60" alt="HackHer413">
+      <img src="assets/images/2025_logo/2025_black _logo.png" width="60" alt="HackHer413">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
       aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -100,23 +110,50 @@
 
       </ul>
       <ul class="navbar-nav justify-content-end">
+<!--         <li class="nav-item right" style="margin-right: 120px;">
+          <a class="nav-link custom-nav" href="https://dashboard.hackher413.com/apply"><button
+              class="btn btn-outline-dark" type="button">Apply Now</button></a>
+        </li> -->
         <li class="nav-item right">
-          <a class="nav-link custom-nav" href="https://dashboard.hackher413.com"><button class="btn btn-outline-dark"
-              type="button">Login</button></a>
+          <a class="nav-link custom-nav" href="https://dashboard.hackher413.com/apply"><button class="btn btn-outline-dark"
+              type="button">Apply</button></a>
         </li>
       </ul>
     </div>
   </nav>
 
+  <!-- pop up for applications -->
+  <!-- <div class = "popup">
+    <img src="assets\images\2025_logo\2025_bee.png" height="142px" width="142px">
+    <h2>Applications now OPEN!</h2>
+    <button type="button" class="applyButton">APPLY NOW</button>
+    <button type="button" class="cancelButton"></button>
+  </div> -->
+
+  <!-- testing code -->
+  <div id="modal" class="modal">
+    <div class="modal-content-popup" width="200px">
+      <div>
+        <img class="apply-popup-img" src="assets\images\2025_logo\2025_bee.png" height="142px" width="142px">
+      </div>
+        <h2>Applications now OPEN!</h2>
+        <p>Apply by January 18th to enter a raffle!</p>
+        <div>
+          <button class="apply-popup" onclick="window.location.href='https://dashboard.hackher413.com/';">APPLY NOW</button>
+        </div>
+        <div>
+          <button class="close-btn" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+  </div>
+
   <div class="landing">
     <div id="jsi-hex-container"></div>
-
-
 
     <div class="headings" id="textshadow">
       <div class="image-crop mx-auto">
         <!--img src="assets/images/2024/full_logo.png" width = "550" height = "550" alt="HackHer413 2024 Logo"  style="clip: rect(0px, 350px, 10px, 0px);"-->
-        <div class="image-bee" style="background-image: url('assets/images/2024/full_logo_cropped2.png');"></div>
+        <div class="image-bee" style="background-image: url('assets/images/2025_logo/2025_black _logo.png');"></div>
       </div>
       <div class="icon text-center pb-4" id="lab_social_icon_footer">
         <a href="https://www.facebook.com/HackHer413/"><i class="fab fa-facebook-f social"></i></a>
@@ -573,7 +610,7 @@
         <div class="cardfr 1">
           <div class="card_image"> <img src="assets\images\misc\ezgif.com-crop (2).webp" /> </div>
           <div class="card_title title-white">
-            <p style = "color:rgb(249, 253, 250); text-shadow:1px 1px 10px #6ca05f, 1px 1px 10px #699c85;">Best Hardware Hack</p>
+            <p style = "color:rgb(249, 253, 250); text-shadow:1px 1px 10px #a8829a, 1px 1px 10px #699c85;">Best Hardware Hack</p>
             <p style = " color:rgb(241, 237, 237); font-size: 15px; margin-top: -7%; text-shadow:1px 1px 10px #838080, 1px 1px 10px #706d6d;"> Raspberry Pi 4 </p>
           </div>
         </div>
@@ -583,7 +620,7 @@
             <img src="assets\images\misc\echo2.gif" />
           </div>
           <div class="card_title">
-            <p style = "color:rgb(240, 243, 246); text-shadow:1px 1px 10px #569a9d, 1px 1px 10px #58a0a8;">Best AI Hack</p>
+            <p style = "color:rgb(240, 243, 246); text-shadow:1px 1px 10px #e8b2c8, 1px 1px 10px #58a0a8;">Best AI Hack</p>
             <p style = " color:rgb(241, 237, 237); font-size: 15px; margin-top: -7%; text-shadow:1px 1px 10px #838080, 1px 1px 10px #706d6d;"> Echo Dot (5th Gen) </p>
           </div>
         </div>
@@ -593,7 +630,7 @@
             <img src="assets\images\misc\drawingpad.gif" />
             </div>
           <div class="card_title title-black">
-            <p style = "color:rgb(240, 243, 246); text-shadow:1px 1px 10px #0f0f0f, 1px 1px 10px #080808;">Best UI/UX</p>
+            <p style = "color:rgb(240, 243, 246); text-shadow:1px 1px 10px #b78992, 1px 1px 10px #080808;">Best UI/UX</p>
             <p style = " color:rgb(241, 237, 237); font-size: 15px; margin-top: -7%; text-shadow:1px 1px 10px #838080, 1px 1px 10px #706d6d;"> XPPen Deco V2 Graphics Tablet</p>
           </div>
           </div>
@@ -603,7 +640,7 @@
               <img src="assets\images\misc\output-onlinepngtools (1).png" />
               </div>
             <div class="card_title title-white">
-              <p style = "color:rgb(254, 252, 255); text-shadow:1px 1px 10px #af7de5, 1px 1px 10px #9c79e7;">Cutest Hack</p>
+              <p style = "color:rgb(254, 252, 255); text-shadow:1px 1px 10px #c2abda, 1px 1px 10px #9c79e7;">Cutest Hack</p>
             <p style = " color:rgb(241, 237, 237); font-size: 15px; margin-top: -7%; text-shadow:1px 1px 10px #838080, 1px 1px 10px #706d6d;"> Mini Projector</p>
             </div>
           </div>
@@ -612,7 +649,7 @@
         
           <h4 class="lightbg-heading" style="padding-top:1em;padding-bottom:1em;">These are just some of last year's prizes. See full list of prizes here!   <li class="list-inline-item">
               <a href="https://dashboard.hackher413.com/prizes">
-              <i class="fas fa-arrow-right" style = "color: #366189;"></i>
+              <i class="fas fa-arrow-right" style = "color: #8d5c74;"></i>
               </a>
             </li></h4>
         </div>
@@ -1141,6 +1178,11 @@
 
 
   <!-- Venue -->
+  <section class="darkbg" id="venue">
+    <h class="dark-heading">Our Venue</h>
+    <p class="dark-para">Hack(H)er413 2024-2025 will be held in the Integrated Learning Center (ILC) at the
+      University of
+      Massachusetts Amherst campus. <br> This year, everyone will be able to attend in person!</p>
   <section class="lightbg" id="venue">
     <h2 class="lightbg-heading">Our Venue</h2>
     <p class="lightbg-para">Hack(H)er413 2024-2025 will be held in the Integrated Learning Center (ILC) at the
@@ -1507,14 +1549,14 @@ s
 
 
   <!--   Sponsors -->
-  <section id="faq" style="background-color:#E8CA84">
+  <section id="faq" style="background-color:#E9E9E9">
     <h2 class="lightbg-heading2 faq-heading" style="padding-top: .5em; padding-bottom: 1em;">Interested in
       Sponsoring Hack(H)er413?
     </h2>
     <div class="container">
       <div class="row gx-5">
         <div class="col" style="color:#0D1D2C;text-align:center">
-          <h3 style="color:  #366189;">Mentorship Opportunities</h3>
+          <h3 style="color:  #8d5c74;">Mentorship Opportunities</h3>
           <p>Employees (engineers and
             anyone excited about tech)
             may volunteer to serve as
@@ -1524,7 +1566,7 @@ s
             projects.</p>
         </div>
         <div class="col" style="color:#0D1D2C;text-align:center">
-          <h3 style="color:  #366189;">Host a Workshop</h3>
+          <h3 style="color:  #8d5c74;">Host a Workshop</h3>
           <p>
             A company representative
             can host a virtual or in person workshop
@@ -1536,7 +1578,7 @@ s
           </p>
         </div>
         <div class="col" style="color:#0D1D2C;text-align:center">
-          <h3 style="color: #366189;">Network with Students</h3>
+          <h3 style="color: #8d5c74;">Network with Students</h3>
           <p>
             Your company can feature
             new job and internship
@@ -1552,7 +1594,7 @@ s
           </p>
         </div>
         <div class="col" style="color:#0D1D2C;text-align:center">
-          <h3 style="color:  #366189;">Donate Prizes</h3>
+          <h3 style="color:  #8d5c74;">Donate Prizes</h3>
           <p>
             Your
             company will donate prizes
@@ -1766,7 +1808,7 @@ s
           <div class="col-lg-3  feature_item faq-tile p-4 m-2">
             <h3>What were last year's prizes?</h3>
             <p>
-              <a href="https://dashboard.hackher413.com/prizes" style="color: blue;">See Full List of Prizes Here</a>
+              <a href="https://dashboard.hackher413.com/prizes" style="color: #8d5c74;">See Full List of Prizes Here</a>
             </p>
           </div>
           <div class="col-lg-3 feature_item faq-tile p-4 m-2">
@@ -1869,7 +1911,7 @@ s
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="assets\images\2025\team-members\hackher_pic - Anisha Sharda.jpg" width="100" height="100" alt="">
             <h4>Anisha Sharda</h4>
-            <p class="text-muted">Co-Director</p>
+            <p class="text-muted">Director</p>
             <p class="text-muted2">she/her</p>
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
@@ -2127,53 +2169,43 @@ s
           </div>
         </div>
       </div>
-      <div class="col-sm-4">
-        <div class="team-member">
-          <img class="mx-auto rounded-circle" src="assets\images\2025\team-members\JenniferYe.jpg" alt="">
-          <h4>Jennifer Ye</h4>
-          <p class="text-muted">Assistant Head of Technology</p>
-          <p class="text-muted2">she/they</p>
-          <ul class="list-inline social-buttons">
-            <li class="list-inline-item">
-              <a href="https://www.linkedin.com/in/jenniferye1t/">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </li>
-            <!-- <li class="list-inline-item">
-              <a href="mailto: garvind@umass.edu">
-                <i class="fas fa-envelope"></i>
-              </a>
-            </li> -->
-          </ul>
-        </div>
-      </div>
-    </div>
 
       <div class="row">
         <div class="col-sm-4">
           <div class="team-member">
-            <img class="mx-auto rounded-circle" src="assets\images\2025\team-members\AR.jpeg" alt="">
+            <img class="mx-auto rounded-circle" src="assets/images/2025/team-members/JenniferYe.jpg" alt="">
+            <h4>Jennifer Ye</h4>
+            <p class="text-muted">Assistant Head of Technology</p>
+            <p class="text-muted2">she/they</p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/jenniferye1t/">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="assets/images/2025/team-members/AR.jpeg" alt="">
             <h4>Aditi Ravindra</h4>
             <p class="text-muted">Head of Logistics</p>
             <p class="text-muted2">she/her</p>
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
-                <a href="https://www.linkedin.com/in/aditi-ravindra/
-                ">
+                <a href="https://www.linkedin.com/in/aditi-ravindra/">
                   <i class="fab fa-linkedin-in"></i>
                 </a>
               </li>
-              <!-- <li class="list-inline-item">
-                <a href="mailto: garvind@umass.edu">
-                  <i class="fas fa-envelope"></i>
-                </a>
-              </li> -->
             </ul>
           </div>
         </div>
+      
         <div class="col-sm-4">
           <div class="team-member">
-            <img class="mx-auto rounded-circle" src="assets\images\2025\team-members\ElizabethPeter.jpg" alt="">
+            <img class="mx-auto rounded-circle" src="assets/images/2025/team-members/ElizabethPeter.jpg" alt="">
             <h4>Elizabeth Peter</h4>
             <p class="text-muted">Assistant Head of Logistics</p>
             <p class="text-muted2">she/her</p>
@@ -2183,47 +2215,37 @@ s
                   <i class="fab fa-linkedin-in"></i>
                 </a>
               </li>
-              <!-- <li class="list-inline-item">
-                <a href="mailto: garvind@umass.edu">
-                  <i class="fas fa-envelope"></i>
-                </a>
-              </li> -->
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="assets\images\2025\team-members\Kavya_1.jpg" alt="">
-            <h4>Kavya Manchanda</h4>
-            <p class="text-muted">Co- Head of Hardware</p>
-            <p class="text-muted2">she/her</p>
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="https://www.linkedin.com/in/kavyamanchanda/">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-              <!-- <li class="list-inline-item">
-                <a href="mailto: garvind@umass.edu">
-                  <i class="fas fa-envelope"></i>
-                </a>
-              </li> -->
             </ul>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="assets\images\2025\team-members\Poul.jpg" alt="">
-            <h4>Poul Holm</h4>
-            <p class="text-muted">Co- Head of Hardware</p>
-            <p class="text-muted2">he/him</p>
-           
-          </div>
-        </div>
-      </div>
+<div class="row justify-content-center">
+  <div class="col-sm-4">
+    <div class="team-member">
+      <img class="mx-auto rounded-circle" src="assets/images/2025/team-members/Kavya_1.jpg" alt="">
+      <h4>Kavya Manchanda</h4>
+      <p class="text-muted">Co-Head of Hardware</p>
+      <p class="text-muted2">she/her</p>
+      <ul class="list-inline social-buttons">
+        <li class="list-inline-item">
+          <a href="https://www.linkedin.com/in/kavyamanchanda/">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+      </ul>
     </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="team-member">
+      <img class="mx-auto rounded-circle" src="assets/images/2025/team-members/Poul.jpg" alt="">
+      <h4>Poul Holm</h4>
+      <p class="text-muted">Co-Head of Hardware</p>
+      <p class="text-muted2">he/him</p>
+    </div>
+  </div>
+</div>
+
       <div class="row justify-content-center">
 
         
@@ -2245,9 +2267,9 @@ s
   <!--   Footer -->
   <footer class="bg-light py-5">
     <div class="container">
-      <div class="small text-center text-muted"> Hack(H)er413 2024. February 17th-18th, 2024. </div>
+      <div class="small text-center text-muted"> Hack(H)er413 2025. February 15th-16th, 2025. </div>
 
-      <div class="small text-center text-muted"> Made with <span style="color: #2a70b5;">&hearts;</span>
+      <div class="small text-center text-muted"> Made with <span style="color: #b5838d;">&hearts;</span>
         by the
         Hack(H)er413 Team and proudly supported by the College of Information and Computer Sciences at
         UMass Amherst.

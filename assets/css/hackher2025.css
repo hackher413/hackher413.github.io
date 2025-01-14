@@ -30,7 +30,7 @@ html{
   }
   
   a.icon-nav:hover{
-    color: #8ba9c6;
+    color: #e2b6de;
   }
   
   #mlh-trust-badge{
@@ -141,8 +141,59 @@ html{
     transform: translate(-50%, -50%);
   }
   
-  
-  
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 30%;
+    /* width: 10%; */
+    width: 200px;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+  }
+
+  .modal-content-popup {
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      background-color: #b5838d;
+      width: 35%;
+  }
+
+  .apply-popup {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #000;
+      color: #fff;
+      border: none;
+      width: 30%;
+      /* height: 90%; */
+      border-radius: 5px;
+      cursor: pointer;
+  }
+
+  .apply-popup-img {
+    width: 125px;
+    margin-top: -110px;
+    border-radius: 50%;
+  }
+
+  .close-btn {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #c4ddca78;
+      color: #000;
+      border: none;
+      width: 30%;
+      /* height: 90%; */
+      border-radius: 5px;
+      cursor: pointer;
+  }
+
   .button {
     position: absolute;
     top: 95%;
@@ -158,7 +209,7 @@ html{
     font-family: 'News Cycle';
     font-weight:900;
     letter-spacing: 0.045em;
-    background-color: #D19739;
+    background-color: #b5838d;
     border: 2px solid #fff;
   }
   
@@ -167,27 +218,27 @@ html{
   
     width: 150px;
     color: #212529;
-    background-color: #E8CA84;
-    border-color: white
+    background-color: #c4ddca;
+    border-color: #b5838d
   
   }
   
   .btn-primary:hover {
     color: #212529;
-    background-color: rgb(207, 194, 194);
-    border-color: white
+    background-color: #ba6c7c;
+    border-color: #ba6c7c
   }
   
   .btn-primary:focus,
   .btn-primary.focus {
-    box-shadow: 0 0 0 .2rem #45A49B
+    box-shadow: 0 0 0 .2rem #ba6c7c
   }
   
   .btn-primary.disabled,
   .btn-primary:disabled {
     color: #212529;
     background-color: #b5838d;
-    border-color: #b98c95
+    border-color: #ba6c7c
   }
   
   .btn-primary:not(:disabled):not(.disabled):active,
@@ -195,7 +246,7 @@ html{
   .show>.btn-primary.dropdown-toggle {
     color: #212529;
     background-color: #b5838d;
-    border-color: #dbc3d3
+    border-color: #ba6c7c
   }
   
   .btn-primary:not(:disabled):not(.disabled):active:focus,
@@ -208,7 +259,7 @@ html{
     color: rgb(255, 255, 255);
     background-color: transparent;
     background-image: none;
-    border-color: white
+    border-color: #b5838d
   }
   
   
@@ -218,7 +269,7 @@ html{
     border: none;
     /* left: 24%; */
     border-radius: 10px;
-    background: linear-gradient(to right, #bf8490,#e37fc1,#bf8490,#d096ba,#d096ba,#F0FFFF);
+    background: linear-gradient(to right, #bf8490,#e37fc1,#bf8490,#ba6c7c,#ba6c7c,#F0FFFF);
     background-size: 250%;
     background-position: left;
     color: #c4ddca;
@@ -233,8 +284,8 @@ html{
   
   .Btn::before {
     position: absolute;
-    content: "Check out this year's photos!";
-    color: #dbc3d3;
+    content: "Check out last year's photos!";
+    color: #e2b6de;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -267,7 +318,7 @@ html{
     border: none;
     /* left: 24%; */
     border-radius: 10px;
-    background: linear-gradient(to right,#bf8490,#e37fc1,#bf8490,#d096ba,#d096ba,#F0FFFF);
+    background: linear-gradient(to right,#bf8490,#e37fc1,#bf8490,#ba6c7c,#ba6c7c,#F0FFFF);
     background-size: 250%;
     background-position: left;
     color: #fcfcfc;
@@ -318,7 +369,7 @@ html{
     border: none;
     /* left: 24%; */
     border-radius: 10px;
-    background: linear-gradient(to right,#bf8490,#e37fc1,#bf8490,#d096ba,#d096ba,#F0FFFF);
+    background: linear-gradient(to right,#bf8490,#e37fc1,#bf8490,#ba6c7c,#ba6c7c,#F0FFFF);
     background-size: 250%;
     background-position: left;
     color: #c4ddca;
@@ -368,7 +419,7 @@ html{
     border: none;
     /* left: 24%; */
     border-radius: 10px;
-    background: linear-gradient(to right,#bf8490,#e37fc1,#bf8490,#d096ba,#d096ba,#F0FFFF);
+    background: linear-gradient(to right,#bf8490,#e37fc1,#bf8490,#ba6c7c,#ba6c7c,#F0FFFF);
     background-size: 250%;
     background-position: left;
     color: #c4ddca;
@@ -533,7 +584,7 @@ html{
   
   .btn-outline-secondary.disabled,
   .btn-outline-secondary:disabled {
-    color: #7cc;
+    color: rgb(167, 212, 212);
     background-color: transparent
   }
   
@@ -586,7 +637,7 @@ html{
   
   /* Modal Content */
   .modal-content {
-    background-color: #45A49B;
+    background-color: #b5838d;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
@@ -629,7 +680,7 @@ html{
   
   .about-heading{
     font-size: 2em;
-    color: #45A49B;
+    color: #b5838d;
     text-align: center;
     font-family: 'News Cycle';
   }
@@ -691,7 +742,7 @@ html{
   
   .whitebg-heading{
     font-size: 2em;
-    color: #56b8b8;
+    color: #c18893;
     text-align: center;
     font-family: 'News Cycle';
   }
@@ -708,12 +759,12 @@ html{
     text-align: center;
     font-family: 'News Cycle';
     font-size: 1.2em;
-    color: #45A49B;
+    color: #c18893;
   }
   
   /* LIGHT GREEN BG */
   .greenbg{
-    background-color: #5b5fd8;
+    background-color: #c4ddca;
     padding: 5%;
     display: inline-block;
   }
@@ -737,7 +788,7 @@ html{
     text-align: center;
     font-family: 'News Cycle';
     font-size: 1.2em;
-    color: #45A49B;
+    color: #ba6c7c;
   }
   
   /* GREY BG */
@@ -766,19 +817,19 @@ html{
     text-align: center;
     font-family: 'News Cycle';
     font-size: 1.2em;
-    color: #56b8b8;
+    color: #ba6c7c;
   }
   
   /* Dark Section Speaker */
   .darkbg{
-    background: linear-gradient(#366189, #0D1D2C);
+    background:#ba6c7c;
     padding: 5%;
-    display: inline-block;
+    /*display: inline-block;*/
   }
   
   .darkbg-heading{
     font-size: 2em;
-    color: #fff;
+    color: white;
     font-family: 'News Cycle';
     text-align: center;
   }
@@ -788,32 +839,32 @@ html{
     font-family: 'News Cycle';
     font-size: 1.2em;
     text-align: center;
-    color: #ffffff;
+    color: white;
   }
   
   /* Light Blue Section */
   .lightbg{
-    background-color: #f8f9fa;
+    background-color: #ba6c7c;
     padding: 5%;
     /* display: inline-block; */
   }
   
   .lightbg-heading{
     font-size: 2em;
-    color: #383d45;
+    color:#8d5c74;
     font-family: 'News Cycle';
     text-align: center;
   }
   .lightbg-heading2{
     font-size: 2.3em;
-    color: #174a9a;
+    color: #8d5c74;
     font-family: 'News Cycle';
     text-align: center;
   }
   
   .lightbg-heading3{
     font-size: 2em;
-    color: #383d45;
+    color: #8d5c74;
     font-family: 'News Cycle';
     text-align: left;
     transform: translateX(50%);
@@ -824,7 +875,7 @@ html{
     font-family: 'News Cycle';
     font-size: 1.2em;
     text-align: center;
-    color: #383d45;
+    color: #8d5c74;
   }
   
   
@@ -860,7 +911,7 @@ html{
   }
   
   .img-sq {
-    filter: drop-shadow(0 0 0.25rem #366189);
+    filter: drop-shadow(0 0 0.25rem #ba6c7c);
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -903,7 +954,7 @@ html{
     text-align: center;
     opacity: 0;
     color: #fff;
-    background: #45A49B;
+    background: #b5838d;
     -webkit-transition: opacity 0.25s ease;
     transition: opacity 0.25s ease;
     text-align: center;
@@ -952,7 +1003,7 @@ html{
   .blockquote:after {
       position: absolute;
       content: "”";
-      color: #E8CA84;
+      color: #aecbb5;
       font-size: 20em;
       line-height: 1;
       left: calc(50% - 3rem);
@@ -970,7 +1021,7 @@ html{
       height: 100%;
       z-index: -1;
      background-color: #F9FFED;
-      background-image: linear-gradient(45deg, #F9FFED 0%, #F9FFED 24%, #45A49B 49%, #F9FFED 75%, white 100%);
+      background-image: linear-gradient(45deg, #F9FFED 0%, #F9FFED 24%, #b5838d 49%, #F9FFED 75%, white 100%);
   
       background-size: 400% 400%;
       animation: gradientborders 8s ease infinite;
@@ -1006,7 +1057,7 @@ html{
   /* Blockquote subheader */
   .blockquote h4 {
       position: relative;
-      color: #366189;
+      color: #ba6c7c;
       background-color: white;
       text-transform: uppercase;
       font-size: 1rem;
@@ -1026,9 +1077,9 @@ html{
   .cfp-section{
     display: block;
     text-align:center;
-    background-color: #E8CA84;
+    background-color: #c4ddca;
     padding: 20px;
-    border-bottom: 6px solid #E8CA84;
+    border-bottom: 6px solid #c4ddca;
   }
   
   .cfp-section p{
@@ -1045,7 +1096,7 @@ html{
   .sponsor-section{
     display: block;
     text-align:center;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 20px;
     border-bottom: 6px solid #fff;
   }
@@ -1134,7 +1185,7 @@ html{
   .hexagon-test {
     width: 200px;
     height: 110px;
-    background-color: #6c6;
+    background-color: #db8db8;
     position: relative;
     margin: 50px 10px;
   }
@@ -1150,13 +1201,13 @@ html{
   
   .hexagon-test:before {
     bottom: 100%;
-    border-bottom: 50px solid #6c6;
+    border-bottom: 50px solid #db8db8;
   }
   
   .hexagon-test:after {
     top: 100%;
     width: 0;
-    border-top: 50px solid #6c6;
+    border-top: 50px solid #db8db8;
   }
   
   .hexagon-inner-test {
@@ -1190,7 +1241,7 @@ html{
   .h {
     width: 100px; /* Adjust the hexagon size as needed */
     height: 115px; /* Adjust the hexagon size as needed */
-    background-color: #3498db; /* Hexagon background color */
+    background-color: #ca6579; /* Hexagon background color */
     position: relative;
     margin: 20px; /* Adjust the margin to create spacing between hexagons */
     transform: rotate(120deg);
@@ -1215,13 +1266,13 @@ html{
   
   .h:before {
     bottom: 100%;
-    border-bottom: 29px solid #3498db;
+    border-bottom: 29px solid #ca6579;
   }
   
   .h:after {
     top: 100%;
     width: 0;
-    border-top: 29px solid #3498db;
+    border-top: 29px solid #ca6579;
   }
   
   /* hexagons */
@@ -1460,7 +1511,7 @@ html{
   .social-media{
     padding: 20px;
     padding-top: 10%;
-    background-color: #91DDCE;
+    background-color: #aecbb5;
   }
   
   /* Extra small devices (phones, 600px and down) */
@@ -1530,7 +1581,7 @@ html{
       width: 400px;
     }
     .vl{
-      border-left: 3px dashed #E8CA84;
+      border-left: 3px dashed #c4ddca;
     }
     .coming-soon{
       padding-top: 20%;
@@ -1552,7 +1603,7 @@ html{
     }
     
     .vl{
-      border-left: 3px dashed #E8CA84;
+      border-left: 3px dashed #c4ddca;
     }
     .coming-soon{
       padding-top: 20%;
@@ -1598,7 +1649,7 @@ html{
         line-height: 60px; }
     .feature_item h4 {
         text-align: center;
-      color: #366189;
+      color: black;
       font-size: 19px;
       font-family: "Heebo", sans-serif;
       font-weight: bold;
@@ -1614,7 +1665,7 @@ html{
       box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.08);
       border-color: #fff; }
       .feature_item:hover i:before {
-        background: linear-gradient(to right, #366189 0%, #8d5c7c 70%);
+        background: linear-gradient(to right, #ba6c7c 0%, #8d5c7c 70%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; }
   
@@ -1685,7 +1736,7 @@ html{
     border-radius: 5px; }
     .wel_item i {
       font-size: 24px;
-      background: linear-gradient(to right, #366189 0%, #8d5c74 70%);
+      background: linear-gradient(to right, #ba6c7c 0%, #8d5c74 70%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
     .wel_item h4 {
@@ -1734,9 +1785,9 @@ html{
           border-radius: 5px;
           vertical-align: middle;
           align-self: center;
-          background-image: -moz-linear-gradient(0deg, #366189 0%, #E8CA84 100%);
-          background-image: -webkit-linear-gradient(0deg, #366189 0%, #E8CA84 100%);
-          background-image: -ms-linear-gradient(0deg, #366189 0%, #E8CA84 100%); }
+          background-image: -moz-linear-gradient(0deg, #ba6c7c 0%, #c4ddca 100%);
+          background-image: -webkit-linear-gradient(0deg, #ba6c7c 0%, #c4ddca 100%);
+          background-image: -ms-linear-gradient(0deg, #ba6c7c 0%, #c4ddca 100%); }
   
   /* End Welcome Area css
   ============================================================================================ */
@@ -1744,7 +1795,7 @@ html{
   #venue-section{
     display: block;
     text-align:center;
-    background: linear-gradient(#90c97d, #366189);
+    background:#ba6c7c;
     padding: 20px;
     padding-top: 35px;
     border-bottom: 6px solid #E6F4F4;
@@ -1768,7 +1819,7 @@ html{
   
     /* Last Year's Event  */
     .last-year{
-      background-color: #366189;
+      background-color: #ba6c7c;
       padding: 3% 0;
     }
   
@@ -1787,11 +1838,11 @@ html{
     }
   
     .highlight{
-    background: linear-gradient(180deg,rgba(255,255,255,0) 60%, #366189 40%);
+    background: linear-gradient(180deg,rgba(255,255,255,0) 60%, #ba6c7c 40%);
     }
   
     .highlight:hover {
-    background: linear-gradient(180deg,rgba(255,255,255,0) 80%, #366189 40%);
+    background: linear-gradient(180deg,rgba(255,255,255,0) 80%, #ba6c7c 40%);
     }
   
     .last-year-link{
@@ -1808,7 +1859,7 @@ html{
   
   .team{
     padding-top: 5%;
-    background-image: linear-gradient(to bottom, #fff , #91DDCE);
+    background-image: linear-gradient(to bottom, #fff , #aecbb5);
   }
   
   
@@ -1840,8 +1891,8 @@ html{
   
   .apply-btns {
       text-align: center;
-      background-color: #E8CA84;
-      border: 1px solid #E8CA84;
+      background-color: #c4ddca;
+      border: 1px solid #c4ddca;
       color: #fff;
       font-size: 1.3em;
       padding: 5px;
@@ -1853,7 +1904,7 @@ html{
   
   /* Tracks */
   .tracks{
-    background-color: #366189;
+    background-color: #ba6c7c;
     padding: 3% 0;
   }
   
@@ -1903,7 +1954,7 @@ html{
   }
   
   #faq{
-    background-color: #366189;
+    background-color: #ba6c7c;
     padding: 95px;
   }
   
@@ -1972,7 +2023,7 @@ html{
     height: 25px;
     right: -17px;
     background-color: white;
-    border: 4px solid #E8CA84;
+    border: 4px solid #c4ddca;
     top: 15px;
     border-radius: 50%;
     z-index: 1;
@@ -2113,7 +2164,7 @@ html{
   
   }
   .events-detail li:hover {
-    background: #366189;
+    background: #ba6c7c;
   }
   .event-time {
     font-weight: 900;
@@ -2131,7 +2182,7 @@ html{
   }
   .event-location {
     font-size: 0.8em;
-    color: #366189;
+    color: #ba6c7c;
     margin-left: 70px;
   }
   @media all and (max-width: 641px) {
@@ -2232,8 +2283,8 @@ html{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgb(0,253,253);
-    background: radial-gradient(circle, rgba(0,253,253,1) 0%, rgba(15,207,207,1) 50%, rgba(15,207,207,1) 100%);
+    background: rgb(196, 221, 202);;
+    background: radial-gradient(circle, rgb(196, 221, 202, 1) 0%, rgb(198, 222, 203, 1) 50%, rgb(198, 222, 203, 1) 100%);
     z-index: 9999;
     display: flex;
     justify-content: center;
