@@ -122,7 +122,7 @@ var RENDERER = {
 	render : function(){
 		requestAnimationFrame(this.render);
 
-		this.context.fillStyle = 'hsla(320, 25.00%, 81.20%, 0.30)';
+		this.context.fillStyle = 'hsla(233, 42%, 69%, 0.30)';
 		this.context.fillRect(0, 0, this.width, this.height);
 
 		for(var i = 0, count = this.hexagons.length; i < count; i++){
