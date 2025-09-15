@@ -160,7 +160,7 @@ html{
       border-radius: 5px;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
       text-align: center;
-      background-color: #b5838d;
+      background-color: #6F939B;
       width: 35%;
   }
 
@@ -209,7 +209,7 @@ html{
     font-family: 'News Cycle';
     font-weight:900;
     letter-spacing: 0.045em;
-    background-color: #b5838d;
+    background-color: #6F939B;
     border: 2px solid #fff;
   }
   
@@ -219,7 +219,7 @@ html{
     width: 150px;
     color: #212529;
     background-color: #c4ddca;
-    border-color: #b5838d
+    border-color: #6F939B
   
   }
   
@@ -237,7 +237,7 @@ html{
   .btn-primary.disabled,
   .btn-primary:disabled {
     color: #212529;
-    background-color: #b5838d;
+    background-color: #6F939B;
     border-color: #8d95d1
   }
   
@@ -245,7 +245,7 @@ html{
   .btn-primary:not(:disabled):not(.disabled).active,
   .show>.btn-primary.dropdown-toggle {
     color: #212529;
-    background-color: #b5838d;
+    background-color: #6F939B;
     border-color: #8d95d1
   }
   
@@ -259,7 +259,7 @@ html{
     color: rgb(255, 255, 255);
     background-color: transparent;
     background-image: none;
-    border-color: #b5838d
+    border-color: #6F939B
   }
   
   
@@ -269,7 +269,7 @@ html{
     border: none;
     /* left: 24%; */
     border-radius: 10px;
-    background: linear-gradient(to right, #bf8490,#e37fc1,#bf8490,#8d95d1,#8d95d1,#F0FFFF);
+    background: linear-gradient(to right, #aeb2d4,#9499C7,#7980B9,#8d95d1,#8d95d1,#F0FFFF);
     background-size: 250%;
     background-position: left;
     color: #c4ddca;
@@ -285,7 +285,7 @@ html{
   .Btn::before {
     position: absolute;
     content: "Check out last year's photos!";
-    color: #e2b6de;
+    color: #8d95d1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -318,7 +318,7 @@ html{
     border: none;
     /* left: 24%; */
     border-radius: 10px;
-    background: linear-gradient(to right,#bf8490,#e37fc1,#bf8490,#8d95d1,#8d95d1,#F0FFFF);
+    background: linear-gradient(to right,#aeb2d4,#9499C7,#7980B9,#8d95d1,#8d95d1,#F0FFFF);
     background-size: 250%;
     background-position: left;
     color: #fcfcfc;
@@ -369,7 +369,7 @@ html{
     border: none;
     /* left: 24%; */
     border-radius: 10px;
-    background: linear-gradient(to right,#bf8490,#e37fc1,#bf8490,#8d95d1,#8d95d1,#F0FFFF);
+    background: linear-gradient(to right,#aeb2d4,#9499C7,#7980B9,#8d95d1,#8d95d1,#F0FFFF);
     background-size: 250%;
     background-position: left;
     color: #c4ddca;
@@ -419,7 +419,7 @@ html{
     border: none;
     /* left: 24%; */
     border-radius: 10px;
-    background: linear-gradient(to right,#bf8490,#e37fc1,#bf8490,#8d95d1,#8d95d1,#F0FFFF);
+    background: linear-gradient(to right,#aeb2d4,#9499C7,#7980B9,#8d95d1,#8d95d1,#F0FFFF);
     background-size: 250%;
     background-position: left;
     color: #c4ddca;
@@ -435,7 +435,7 @@ html{
   .Mail::before {
     position: absolute;
     content: "Subscribe to our Mailing List";
-    color: #e2b6de;
+    color: #8d95d1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -494,8 +494,8 @@ html{
   .btn-outline-primary:not(:disabled):not(.disabled).active,
   .show>.btn-outline-primary.dropdown-toggle {
     color: #212529;
-    background-color: #b5838d;
-    border-color: #b5838d
+    background-color: #6F939B;
+    border-color: #6F939B
   }
   
   .btn-outline-primary:not(:disabled):not(.disabled):active:focus,
@@ -519,21 +519,21 @@ html{
   
   .btn-secondary:focus,
   .btn-secondary.focus {
-    box-shadow: 0 0 0 .2rem #b5838d
+    box-shadow: 0 0 0 .2rem #6F939B
   }
   
   .btn-secondary.disabled,
   .btn-secondary:disabled {
     color: #212529;
-    background-color: #b5838d;
-    border-color: #b5838d
+    background-color: #6F939B;
+    border-color: #6F939B
   }
   
   .btn-secondary:not(:disabled):not(.disabled):active,
   .btn-secondary:not(:disabled):not(.disabled).active,
   .show>.btn-secondary.dropdown-toggle {
     color: #212529;
-    background-color: #b5838d;
+    background-color: #6F939B;
     border-color: #c17c89
   }
   
@@ -592,8 +592,8 @@ html{
   .btn-outline-secondary:not(:disabled):not(.disabled).active,
   .show>.btn-outline-secondary.dropdown-toggle {
     color: #212529;
-    background-color: #b5838d;
-    border-color: #b5838d
+    background-color: #6F939B;
+    border-color: #6F939B
   }
   
   .btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
@@ -680,7 +680,7 @@ html{
   
   .about-heading{
     font-size: 2em;
-    color: #b5838d;
+    color: #6F939B;
     text-align: center;
     font-family: 'News Cycle';
   }
@@ -851,20 +851,20 @@ html{
   
   .lightbg-heading{
     font-size: 2em;
-    color:#8d5c74;
+    color:#6F939B;
     font-family: 'News Cycle';
     text-align: center;
   }
   .lightbg-heading2{
     font-size: 2.3em;
-    color: #8d5c74;
+    color: #6F939B;
     font-family: 'News Cycle';
     text-align: center;
   }
   
   .lightbg-heading3{
     font-size: 2em;
-    color: #8d5c74;
+    color: #6F939B;
     font-family: 'News Cycle';
     text-align: left;
     transform: translateX(50%);
@@ -875,7 +875,7 @@ html{
     font-family: 'News Cycle';
     font-size: 1.2em;
     text-align: center;
-    color: #8d5c74;
+    color: #6F939B;
   }
   
   
@@ -954,7 +954,7 @@ html{
     text-align: center;
     opacity: 0;
     color: #fff;
-    background: #b5838d;
+    background: #6F939B;
     -webkit-transition: opacity 0.25s ease;
     transition: opacity 0.25s ease;
     text-align: center;
@@ -1021,7 +1021,7 @@ html{
       height: 100%;
       z-index: -1;
      background-color: #F9FFED;
-      background-image: linear-gradient(45deg, #F9FFED 0%, #F9FFED 24%, #b5838d 49%, #F9FFED 75%, white 100%);
+      background-image: linear-gradient(45deg, #F9FFED 0%, #F9FFED 24%, #6F939B 49%, #F9FFED 75%, white 100%);
   
       background-size: 400% 400%;
       animation: gradientborders 8s ease infinite;
@@ -1399,7 +1399,7 @@ html{
             transform:translate3d(0,0,0);
   }
   .hexLink:hover::after {
-    background-color: rgba(54, 97, 137, 0.9);
+    background-color: rgba(141, 149, 209, 0.75);
   }
   
   /*** HEXAGON SIZING AND EVEN ROW INDENTATION *****************************************************************/
@@ -1665,7 +1665,7 @@ html{
       box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.08);
       border-color: #fff; }
       .feature_item:hover i:before {
-        background: linear-gradient(to right, #8d95d1 0%, #8d5c7c 70%);
+        background: linear-gradient(to right, #aeb2d4 0%, #8d95d1 70%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; }
   
@@ -1736,7 +1736,7 @@ html{
     border-radius: 5px; }
     .wel_item i {
       font-size: 24px;
-      background: linear-gradient(to right, #8d95d1 0%, #8d5c74 70%);
+      background: linear-gradient(to right, #8d95d1 0%, #6F939B 70%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
     .wel_item h4 {
