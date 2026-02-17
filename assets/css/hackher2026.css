@@ -160,7 +160,7 @@ html{
       border-radius: 5px;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
       text-align: center;
-      background-color: #6F939B;
+      background-color: #E6E6FA;
       width: 35%;
   }
 
@@ -177,15 +177,15 @@ html{
   }
 
   .apply-popup-img {
-    width: 125px;
-    margin-top: -110px;
-    border-radius: 50%;
+    width: 100px;
+    margin-top: -10px;
+    border-radius: 0%;
   }
 
   .close-btn {
       margin-top: 10px;
       padding: 10px 20px;
-      background: #c4ddca78;
+      background: #b59dcc;
       color: #000;
       border: none;
       width: 30%;
